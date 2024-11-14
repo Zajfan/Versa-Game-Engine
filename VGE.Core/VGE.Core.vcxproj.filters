@@ -34,6 +34,12 @@
     <Filter Include="Scene\Source Files">
       <UniqueIdentifier>{ee814a55-4802-49ad-bcb9-afaa2faf820a}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Scene\Node Components">
+      <UniqueIdentifier>{269fdb29-4603-4b7b-9e85-b240232ec2ca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene\Node Components\Header Files">
+      <UniqueIdentifier>{06550cbb-75f1-42c2-acdd-a12b25a2ec41}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Math\Vector3.h">
@@ -57,43 +63,7 @@
     <ClInclude Include="Scene\Header Files\NodeComponent.h">
       <Filter>Scene\Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Scene\Header Files\NodeConnections.h">
-      <Filter>Scene\Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Scene\Node Components\Header Files\NodeConnections.h">
-      <Filter>Scene\Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Scene\Header Files\NodeData.h">
-      <Filter>Scene\Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Scene\Node Components\Header Files\NodeData.h">
-      <Filter>Scene\Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Scene\Header Files\NodeDataType.h">
-      <Filter>Scene\Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Scene\Node Components\Header Files\NodeDataType.h">
-      <Filter>Scene\Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Scene\Header Files\NodeExecution.h">
-      <Filter>Scene\Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Scene\Node Components\Header Files\NodeExecution.h">
-      <Filter>Scene\Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Scene\Header Files\NodeSerialization.h">
-      <Filter>Scene\Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Scene\Header Files\NodeState.h">
-      <Filter>Scene\Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Scene\Node Components\Header Files\NodeState.h">
-      <Filter>Scene\Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Scene\Header Files\NodeVisuals.h">
-      <Filter>Scene\Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Scene\Node Components\Header Files\NodeVisuals.h">
       <Filter>Scene\Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Scene\Header Files\Pin.h">
@@ -101,6 +71,42 @@
     </ClInclude>
     <ClInclude Include="Scene\Header Files\VariableNode.h">
       <Filter>Scene\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\Node Components\Header Files\NodeVisuals.h">
+      <Filter>Scene\Node Components\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\Header Files\NodeConnections.h">
+      <Filter>Scene\Node Components\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\Node Components\Header Files\NodeConnections.h">
+      <Filter>Scene\Node Components\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\Header Files\NodeData.h">
+      <Filter>Scene\Node Components\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\Node Components\Header Files\NodeData.h">
+      <Filter>Scene\Node Components\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\Header Files\NodeDataType.h">
+      <Filter>Scene\Node Components\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\Node Components\Header Files\NodeDataType.h">
+      <Filter>Scene\Node Components\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\Header Files\NodeExecution.h">
+      <Filter>Scene\Node Components\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\Node Components\Header Files\NodeExecution.h">
+      <Filter>Scene\Node Components\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\Header Files\NodeState.h">
+      <Filter>Scene\Node Components\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\Node Components\Header Files\NodeState.h">
+      <Filter>Scene\Node Components\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\Header Files\NodeVisuals.h">
+      <Filter>Scene\Node Components\Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
