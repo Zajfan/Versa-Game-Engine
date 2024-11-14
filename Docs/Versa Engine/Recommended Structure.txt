@@ -1,0 +1,5 @@
+Recommended Structure
+
+VersaEngine.Core.sln: Contains projects for the core engine components (VersaEngine.Core, VersaEngine.Rendering, etc.).
+VersaEngine.Editor.sln: Contains projects related to the editor (VersaEngine.Editor, VersaEngine.GraphEditor, etc.).
+VersaEngine.sln (Master Solution): This solution can now reference the .sln files of VersaEngine.Core and VersaEngine.Editor as projects. This allows you to build the entire engine and editor from a single solution if needed.

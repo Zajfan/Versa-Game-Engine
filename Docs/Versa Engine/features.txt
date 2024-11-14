@@ -1,0 +1,64 @@
+General Features:
+
+User-friendly interface
+Performance-focused
+Cross-platform compatibility
+2D and 3D graphics support
+Visual scripting
+Node-based logic
+Event-based logic
+Data-driven architecture
+Modular design
+Entity-component system (ECS)
+Scene management
+Sprite animation
+Tilemap support
+GUI system
+Audio engine
+Physics integration (2D and 3D)
+Particle system
+Animation tools
+Input handling
+Networking support
+Terrain editor
+Scripting support (various languages)
+Content pipeline
+Resource management
+Post-processing effects
+Level editing tools
+World editor
+Visual effects editor
+Mobile development focus
+Desktop development focus
+Web development focus (HTML5)
+Virtual Reality (VR) support
+Augmented Reality (AR) support
+Collaborative development features
+Flash Player emulation
+Retro game styling
+High-performance rendering
+Modern rendering techniques
+Research-focused
+Community-driven development
+Reimplementation of classic game engines (e.g., Morrowind, X-Ray)
+Open-world game development focus
+Specific Features:
+
+No-code development
+Built-in behaviors
+Plugin system
+XNA compatibility
+Lightweight design
+Classic game library
+Multimedia focus
+Pixel art focus
+Fantasy console limitations
+Pathfinding
+Game development DSL
+Collision detection
+Rigid body physics
+Joints and constraints
+Logic bricks
+Shaders
+API abstraction
+Visual simulation

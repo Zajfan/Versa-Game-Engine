@@ -1,0 +1,10 @@
+Node Relationships and Hierarchy
+
+Parent-Child Relationships:
+
+Visual Nesting: If you plan to support nested nodes or subgraphs, enhance the visual representation to clearly show the parent-child hierarchy.
+Execution Order: Consider how parent nodes should affect the execution order of their child nodes.
+Node Grouping:
+
+Group Nodes: Allow users to group related nodes together visually in the graph editor. This can improve organization and readability, especially for complex graphs.
+Group Execution: Potentially allow groups of nodes to be executed as a single unit or have their execution controlled as a group.

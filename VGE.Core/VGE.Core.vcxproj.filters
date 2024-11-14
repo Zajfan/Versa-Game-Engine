@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Math">
+      <UniqueIdentifier>{8f59d3ce-f062-4b4f-88e6-43ec1ab08ebe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Math\Header Files">
+      <UniqueIdentifier>{38f857bb-1d46-415e-8476-df4aaee612da}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Math\Source Files">
+      <UniqueIdentifier>{c0a1f821-82c9-4e65-867b-cf3a4ed16690}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rendering">
+      <UniqueIdentifier>{5f743353-53b0-4a2b-b5fb-8bbac28182f5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene">
+      <UniqueIdentifier>{85db09e1-1a19-4cef-ad5e-60db1e9d743e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene\Header Files">
+      <UniqueIdentifier>{f6a5d74b-ca5e-4d9a-a213-ada469dd2745}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene\Source Files">
+      <UniqueIdentifier>{ee814a55-4802-49ad-bcb9-afaa2faf820a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Math\Vector3.h">
+      <Filter>Math\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\Header Files\Connection.h">
+      <Filter>Scene\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\Header Files\Event.h">
+      <Filter>Scene\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\Header Files\EventNode.h">
+      <Filter>Scene\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\Header Files\ISelectable.h">
+      <Filter>Scene\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\Header Files\Node.h">
+      <Filter>Scene\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\Header Files\NodeComponent.h">
+      <Filter>Scene\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\Header Files\NodeConnections.h">
+      <Filter>Scene\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\Node Components\Header Files\NodeConnections.h">
+      <Filter>Scene\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\Header Files\NodeData.h">
+      <Filter>Scene\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\Node Components\Header Files\NodeData.h">
+      <Filter>Scene\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\Header Files\NodeDataType.h">
+      <Filter>Scene\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\Node Components\Header Files\NodeDataType.h">
+      <Filter>Scene\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\Header Files\NodeExecution.h">
+      <Filter>Scene\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\Node Components\Header Files\NodeExecution.h">
+      <Filter>Scene\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\Header Files\NodeSerialization.h">
+      <Filter>Scene\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\Header Files\NodeState.h">
+      <Filter>Scene\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\Node Components\Header Files\NodeState.h">
+      <Filter>Scene\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\Header Files\NodeVisuals.h">
+      <Filter>Scene\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\Node Components\Header Files\NodeVisuals.h">
+      <Filter>Scene\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\Header Files\Pin.h">
+      <Filter>Scene\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\Header Files\VariableNode.h">
+      <Filter>Scene\Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Scene\Source Files\Connection.cpp">
+      <Filter>Scene\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\Source Files\Node.cpp">
+      <Filter>Scene\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\Source Files\NodeComponent.cpp">
+      <Filter>Scene\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\Source Files\NodeConnections.cpp">
+      <Filter>Scene\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\Source Files\NodeData.cpp">
+      <Filter>Scene\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\Source Files\NodeExecution.cpp">
+      <Filter>Scene\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\Source Files\NodeSerialization.cpp">
+      <Filter>Scene\Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

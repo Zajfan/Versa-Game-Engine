@@ -1,0 +1,45 @@
+Essential Nodes for "Pong Evolution"
+
+Scene Nodes:
+
+Create Sprite: Creates a sprite object (for paddles, ball).
+Set Sprite Position: Sets the position of a sprite on the screen.
+Set Sprite Size: Sets the width and height of a sprite.
+Set Sprite Image: Assigns an image to the sprite.
+Movement Nodes:
+
+Move Sprite: Moves a sprite by a specified amount in a direction (for paddle movement).
+Set Velocity: Sets the velocity of a sprite (for the ball).
+Collision Nodes:
+
+On Collision: Triggers an event when two sprites collide.
+Get Collision Normal: Gets the direction of the collision (to calculate bounce).
+Logic Nodes:
+
+If/Else: Branches the logic flow based on a condition.
+Compare: Compares two values (e.g., ball position and paddle position).
+Variable: Stores a value (e.g., score, ball speed).
+Input Nodes:
+
+Get Key Pressed: Detects if a key is pressed (for player input).
+UI Nodes:
+
+Display Text: Displays text on the screen (for score).
+Game Logic Nodes:
+
+Update Score: Increases the score of a player.
+Reset Ball: Resets the ball to the center with a new direction.
+Example Usage:
+
+Paddle Movement: "Get Key Pressed" -> "If/Else" (check if up or down key) -> "Move Sprite"
+Ball Bouncing: "On Collision" -> "Get Collision Normal" -> "Set Velocity" (calculate bounce angle)
+Scoring: "On Collision" (ball with wall) -> "Update Score" -> "Reset Ball"
+Additional Considerations:
+
+Customization: You might want nodes for customizing the game (e.g., ball speed, paddle size, colors).
+Sound: Nodes for playing sound effects (e.g., paddle hit, wall hit, score).
+Visual Effects: Nodes for simple visual effects (e.g., particle burst on collision).
+AI: If you have AI opponents, you'll need nodes for controlling their behavior.
+By starting with this core set of nodes, you can create the basic mechanics of "Pong Evolution." As you develop the game further, you can expand the node system with more advanced features and functionalities.
+
+Remember to prioritize user-friendliness and intuitive design in your node system. The goal is to make it easy for both beginners and experienced developers to create and modify game logic visually.

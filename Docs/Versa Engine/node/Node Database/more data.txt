@@ -1,0 +1,99 @@
+lets add more data to the sql 
+
+
+
+Show drafts
+
+
+SQL
+CREATE TABLE Nodes (
+    NodeId INT AUTO_INCREMENT PRIMARY KEY,
+    Name VARCHAR(255) NOT NULL,
+    Type ENUM('Event', 'Variable', 'Function', 'Logic', 'Math', ...) NOT NULL,
+    Category VARCHAR(255),
+    Description TEXT,
+    Shape ENUM('Rectangle', 'RoundedRectangle', 'Circle', ...) NOT NULL,
+    Color VARCHAR(50), 
+    Icon VARCHAR(255),
+    Tooltip TEXT,
+    IsCollapsed BOOLEAN,
+    ExecutionPriority INT,
+    Condition TEXT,
+    ExecMode ENUM('Default', 'Conditional', 'Loop'),
+    LoopCount INT,
+    AllowMultipleConnections BOOLEAN,
+    Version VARCHAR(50),
+
+    -- New fields for visual representation
+    PositionX FLOAT,       -- X position of the node in the graph editor
+    PositionY FLOAT,       -- Y position of the node in the graph editor
+    Width FLOAT,           -- Width of the node
+    Height FLOAT,          -- Height of the node
+
+    -- New fields for execution and logic
+    IsPure BOOLEAN,        -- Whether the node is a pure function (no side effects)
+    IsAsync BOOLEAN,       -- Whether the node executes asynchronously
+
+    -- New fields for grouping and hierarchy
+    GroupId INT,           -- ID of the group the node belongs to (if any)
+    ParentNodeId INT,      -- ID of the parent node (if nested)
+
+    -- ... other node properties
+    CreatedAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    UpdatedAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,   
+
+    FOREIGN KEY (GroupId) REFERENCES NodeGroups(GroupId) ON DELETE SET NULL, -- Assuming you have a NodeGroups table
+    FOREIGN KEY (ParentNodeId) REFERENCES Nodes(NodeId) ON DELETE CASCADE
+);
+
+CREATE TABLE Pins (
+    -- ... (existing fields)
+
+    -- New fields
+    DefaultValue TEXT,     -- Default value of the pin (can be serialized as text)
+    AllowedNodeTypes TEXT,  -- Comma-separated list of allowed node types for connections (e.g., "Event,Variable")
+
+    -- ... other pin properties
+    FOREIGN KEY (NodeId) REFERENCES Nodes(NodeId) ON DELETE CASCADE
+);
+
+CREATE TABLE NodeConnections (
+    -- ... (existing fields)
+
+    -- New fields
+    IsActive BOOLEAN,      -- Whether the connection is currently active
+    Condition TEXT,       -- Condition for the connection to be active
+
+    -- ... other connection properties
+    FOREIGN KEY (SourceNodeId) REFERENCES Nodes(NodeId) ON DELETE CASCADE,
+    FOREIGN KEY (TargetNodeId) REFERENCES Nodes(NodeId) ON DELETE CASCADE,
+    FOREIGN KEY (SourcePinId) REFERENCES Pins(PinId) ON DELETE CASCADE,
+    FOREIGN KEY (TargetPinId) REFERENCES Pins(PinId) ON DELETE CASCADE
+);
+Use code with caution.
+
+Explanation of new fields
+
+Nodes table:
+
+PositionX, PositionY, Width, Height: Store the node's position and size in the graph editor.
+IsPure: Indicates whether the node is a pure function (i.e., has no side effects and always produces the same output for the same input). This can be used for optimization purposes.
+IsAsync: Indicates whether the node executes asynchronously.
+GroupId: If you implement node grouping, this field stores the ID of the group the node belongs to.
+ParentNodeId: If you support nested nodes or subgraphs, this field stores the ID of the parent node.
+Pins table:
+
+DefaultValue: Stores the default value of the pin, which can be useful for providing initial values or for optional inputs.
+AllowedNodeTypes: Stores a comma-separated list of node types that are allowed to connect to this pin. This provides more fine-grained control over connection validation.
+NodeConnections table:
+
+IsActive: Indicates whether the connection is currently active. This can be used to implement conditional connections or to temporarily disable connections.
+Condition: If you support conditional connections, this field stores the condition that determines whether the connection is active.
+Key considerations
+
+Data types: Choose appropriate data types for the new fields based on your needs and the database system you're using.
+Normalization: Ensure your schema is properly normalized to avoid data redundancy and inconsistencies.
+Indexing: Add indexes to the tables to improve query performance, especially for frequently accessed fields.
+Data validation: Implement data validation checks at the database level to ensure data integrity.
+Population: Update your database population scripts or tools to handle the new fields and data.
+By adding these fields to your database schema, you're capturing more detailed information about your nodes, their properties, and their connections, making your visual scripting system more flexible and powerful.

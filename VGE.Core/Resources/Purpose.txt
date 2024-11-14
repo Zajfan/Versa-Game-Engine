@@ -1,0 +1,1 @@
+Handles loading, unloading, and managing game assets like textures, models, sounds, and other resources. It might also include features like asset streaming and memory management.

@@ -1,0 +1,1 @@
+Manages time-related aspects of the game, such as delta time (time elapsed between frames), frame rate, timers, and potentially time-based events or animations.

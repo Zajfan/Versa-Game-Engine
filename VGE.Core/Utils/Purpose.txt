@@ -1,0 +1,1 @@
+Provides tools for debugging the game, such as logging messages, breakpoints, variable inspection, and performance profiling.

@@ -1,0 +1,5 @@
+In addition to collision detection and rigid body dynamics, consider adding support for:
+Character controllers: Specialized controllers for player characters or NPCs.
+Constraints and joints: To create complex physical interactions between objects (e.g., hinges, springs).
+Ragdoll physics: For realistic character animations when they fall or are impacted.
+Destructible environments: Allow objects to break or deform based on physical forces.

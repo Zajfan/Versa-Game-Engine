@@ -1,0 +1,1 @@
+Provides a way for users to write game logic and behavior using a scripting language (e.g., C#, Lua, Python). This allows for flexibility and easier iteration compared to hardcoding everything in C++.

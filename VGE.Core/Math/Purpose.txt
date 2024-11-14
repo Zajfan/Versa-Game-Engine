@@ -1,0 +1,1 @@
+Provides a collection of mathematical utilities and data structures commonly used in game development, such as vectors, matrices, quaternions, and functions for geometric calculations, transformations, and interpolations.

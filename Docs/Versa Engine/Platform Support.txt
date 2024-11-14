@@ -1,0 +1,1 @@
+Platform Support: As you implement these core systems, consider how they might need to be adapted or extended to support different platforms (e.g., Windows, macOS, Linux, mobile).

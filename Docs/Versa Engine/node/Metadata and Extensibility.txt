@@ -1,0 +1,5 @@
+3. Metadata and Extensibility
+
+Node Descriptions: Add a more extensive Description property to allow users to provide detailed explanations or documentation for their nodes.
+Category or Tags: Allow users to assign categories or tags to nodes to make them easier to organize and search for in the node palette.
+Customizable Properties: Explore ways to allow users to define custom properties on nodes, either through the editor UI or through scripting. This can add flexibility for storing node-specific data or configurations.

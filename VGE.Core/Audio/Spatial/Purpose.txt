@@ -1,0 +1,1 @@
+This subfolder would house the implementation of spatial audio features. This could include 3D audio positioning, sound attenuation based on distance and obstacles, and potentially support for HRTF (Head-Related Transfer Function) for more realistic spatialization.

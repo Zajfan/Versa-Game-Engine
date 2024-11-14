@@ -1,0 +1,10 @@
+4. Performance and Optimization
+
+Lazy Evaluation: For nodes that perform expensive calculations, consider using lazy evaluation techniques to only compute their outputs when they are actually needed.
+Memoization: For nodes with pure functions (i.e., functions that always produce the same output for the same input), consider using memoization to cache results and avoid redundant computations.
+
+Remember
+
+Prioritize features that align with your engine's goals and target audience.
+Strive for a balance between flexibility and complexity.
+Gather feedback from users to ensure the added features are useful and intuitive.

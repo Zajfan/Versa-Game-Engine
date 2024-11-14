@@ -1,0 +1,1 @@
+For multiplayer games, implement networking capabilities for communication between clients and servers.

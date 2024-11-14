@@ -1,0 +1,1 @@
+Handles keyboard, mouse, gamepad, and potentially other input devices. Translates raw input events into actions or data that the game can understand and respond to.
