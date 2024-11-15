@@ -23,7 +23,7 @@
     <Keyword>Win32Proj</Keyword>
     <ProjectGuid>{53a6777c-ce4d-42a5-be8d-eafff1d78898}</ProjectGuid>
     <RootNamespace>VGECore</RootNamespace>
-    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.26100.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -129,7 +129,43 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="Math\Vector3.h" />
+    <ClInclude Include="AI\Core\Agent\Header\Agent.h" />
+    <ClInclude Include="AI\Core\Agent\Header\ChatbotAgent.h" />
+    <ClInclude Include="AI\Header\DialogueManager.h" />
+    <ClInclude Include="AI\Header\KnowledgeBase.h" />
+    <ClInclude Include="AI\Header\Logger.h" />
+    <ClInclude Include="AI\Header\NLUComponent.h" />
+    <ClInclude Include="Components\Header Files\AudioComponent.h" />
+    <ClInclude Include="Components\Header Files\Component.h" />
+    <ClInclude Include="Components\Header Files\IRenderable.h" />
+    <ClInclude Include="Components\Header Files\NodeComponent.h" />
+    <ClInclude Include="Components\Header Files\NodeScriptComponent.h" />
+    <ClInclude Include="Components\Header Files\PhysicsComponent.h" />
+    <ClInclude Include="Components\Header Files\RenderComponent.h" />
+    <ClInclude Include="Components\Header Files\ScriptComponent.h" />
+    <ClInclude Include="Components\Header Files\SpecificComponent.h" />
+    <ClInclude Include="Events\Header Files\Event.h" />
+    <ClInclude Include="Events\Header Files\InputEvent.h" />
+    <ClInclude Include="Interfaces\Header Files\IAudioSource.h" />
+    <ClInclude Include="Interfaces\Header Files\ICloneable.h" />
+    <ClInclude Include="Interfaces\Header Files\IEditable.h" />
+    <ClInclude Include="Interfaces\Header Files\INetworkable.h" />
+    <ClInclude Include="Interfaces\Header Files\ISelectable.h" />
+    <ClInclude Include="Interfaces\Header Files\ISerializable.h" />
+    <ClInclude Include="Interfaces\Scene\Header Files\IDraggable.h" />
+    <ClInclude Include="Interfaces\Scene\Header Files\IPhysicsObject.h" />
+    <ClInclude Include="Interfaces\Scene\Header Files\IRenderable.h" />
+    <ClInclude Include="Interfaces\Scene\Header Files\IResizable.h" />
+    <ClInclude Include="Interfaces\Scene\Header Files\ITransformable.h" />
+    <ClInclude Include="Interfaces\Scene\Header Files\IUpdatable.h" />
+    <ClInclude Include="Math\Header\Vector3.h" />
+    <ClInclude Include="Rendering\Header\DirectXRenderer.h" />
+    <ClInclude Include="Rendering\Header\MetalRenderer.h" />
+    <ClInclude Include="Rendering\Header\OpenGLRenderer.h" />
+    <ClInclude Include="Rendering\Header\Renderer.h" />
+    <ClInclude Include="Rendering\Header\ShaderManager.h" />
+    <ClInclude Include="Rendering\Header\VulkanRenderer.h" />
+    <ClInclude Include="Rendering\Shaders\Header\ShaderManager.h" />
     <ClInclude Include="Scene\Header Files\Connection.h" />
     <ClInclude Include="Scene\Header Files\Event.h" />
     <ClInclude Include="Scene\Header Files\EventNode.h" />
@@ -145,8 +181,64 @@
     <ClInclude Include="Scene\Node Components\Header Files\NodeExecution.h" />
     <ClInclude Include="Scene\Node Components\Header Files\NodeState.h" />
     <ClInclude Include="Scene\Node Components\Header Files\NodeVisuals.h" />
+    <ClInclude Include="Scripting\Header Files\AngelScriptScriptingEngine.h" />
+    <ClInclude Include="Scripting\Header Files\CSharpScriptingEngine.h" />
+    <ClInclude Include="Scripting\Header Files\GameMonkeyScriptScriptingEngine.h" />
+    <ClInclude Include="Scripting\Header Files\Graph.h" />
+    <ClInclude Include="Scripting\Header Files\GraphExecutor.h" />
+    <ClInclude Include="Scripting\Header Files\GraphLayout.h" />
+    <ClInclude Include="Scripting\Header Files\GraphSerializer.h" />
+    <ClInclude Include="Scripting\Header Files\Html5ScriptingEngine.h" />
+    <ClInclude Include="Scripting\Header Files\JavaScriptScriptingEngine.h" />
+    <ClInclude Include="Scripting\Header Files\LuaScriptingEngine.h" />
+    <ClInclude Include="Scripting\Header Files\PawnScriptingEngine.h" />
+    <ClInclude Include="Scripting\Header Files\PythonScriptingEngine.h" />
+    <ClInclude Include="Scripting\Header Files\RubyScriptingEngine.h" />
+    <ClInclude Include="Scripting\Header Files\ScriptingEngine.h" />
+    <ClInclude Include="Scripting\Header Files\SquirrelScriptingEngine.h" />
+    <ClInclude Include="Scripting\Header Files\VersaScriptingEngine.h" />
+    <ClInclude Include="Scripting\Header Files\WebAssemblyScriptingEngine.h" />
+    <ClInclude Include="Serialization\Header Files\NodeSerialization.h" />
+    <ClInclude Include="UI\Header\UIButton.h" />
+    <ClInclude Include="UI\Header\UICheckbox.h" />
+    <ClInclude Include="UI\Header\UIColorPicker.h" />
+    <ClInclude Include="UI\Header\UIElement.h" />
+    <ClInclude Include="UI\Header\UIFileDialog.h" />
+    <ClInclude Include="UI\Header\UIImage.h" />
+    <ClInclude Include="UI\Header\UILabel.h" />
+    <ClInclude Include="UI\Header\UIList.h" />
+    <ClInclude Include="UI\Header\UIManager.h" />
+    <ClInclude Include="UI\Header\UIMenuBar.h" />
+    <ClInclude Include="UI\Header\UIPanel.h" />
+    <ClInclude Include="UI\Header\UIProgressBar.h" />
+    <ClInclude Include="UI\Header\UIRadioButton.h" />
+    <ClInclude Include="UI\Header\UISlider.h" />
+    <ClInclude Include="UI\Header\UITextBox.h" />
+    <ClInclude Include="UI\Header\UITreeView.h" />
+    <ClInclude Include="Utils\Header\DataTypeUtils.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="AI\Core\Agent\Source\Agent.cpp" />
+    <ClCompile Include="AI\Core\Agent\Source\ChatbotAgent.cpp" />
+    <ClCompile Include="AI\Source\BehaviorTrees.cpp" />
+    <ClCompile Include="AI\Source\DecisionMaking.cpp" />
+    <ClCompile Include="AI\Source\FiniteStateMachines.cpp" />
+    <ClCompile Include="AI\Source\GOAP.cpp" />
+    <ClCompile Include="AI\Source\GroupBehavior.cpp" />
+    <ClCompile Include="AI\Source\LearningAI.cpp" />
+    <ClCompile Include="AI\Source\Pathfinding.cpp" />
+    <ClCompile Include="AI\Source\PersonalityandEmotion.cpp" />
+    <ClCompile Include="AI\Source\SensoryPerception.cpp" />
+    <ClCompile Include="Components\Source Files\Component.cpp" />
+    <ClCompile Include="Components\Source Files\NodeComponent.cpp" />
+    <ClCompile Include="Components\Source Files\RenderComponent.cpp" />
+    <ClCompile Include="Components\Source Files\ScriptComponent.cpp" />
+    <ClCompile Include="Components\Source Files\SpecificComponent.cpp" />
+    <ClCompile Include="Data Structures\Source Files\DataStructures.cpp" />
+    <ClCompile Include="Interfaces\Source Files\ISelectable.cpp" />
+    <ClCompile Include="Rendering\Shaders\Source\ShaderManager.cpp" />
+    <ClCompile Include="Rendering\Source\OpenGLRenderer.cpp" />
+    <ClCompile Include="Rendering\Source\ShaderManager.cpp" />
     <ClCompile Include="Scene\Source Files\Connection.cpp" />
     <ClCompile Include="Scene\Source Files\Node.cpp" />
     <ClCompile Include="Scene\Source Files\NodeComponent.cpp" />
@@ -154,6 +246,14 @@
     <ClCompile Include="Scene\Source Files\NodeData.cpp" />
     <ClCompile Include="Scene\Source Files\NodeExecution.cpp" />
     <ClCompile Include="Scene\Source Files\NodeSerialization.cpp" />
+    <ClCompile Include="Scripting\Source Files\Graph.cpp" />
+    <ClCompile Include="Scripting\Source Files\GraphExecutor.cpp" />
+    <ClCompile Include="Scripting\Source Files\GraphLayout.cpp" />
+    <ClCompile Include="Scripting\Source Files\GraphSerializer.cpp" />
+    <ClCompile Include="Scripting\Source Files\LuaScriptingEngine.cpp" />
+    <ClCompile Include="Scripting\Source Files\ScriptingEngine.cpp" />
+    <ClCompile Include="Serialization\Source Files\NodeSerialization.cpp" />
+    <ClCompile Include="UI\Source\UILabel.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
