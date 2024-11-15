@@ -1,14 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="Source Files">
-      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
-      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
-    </Filter>
-    <Filter Include="Header Files">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
-    </Filter>
     <Filter Include="Resource Files">
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
@@ -175,6 +167,17 @@
     <Filter Include="Utils\Source Files">
       <UniqueIdentifier>{7536bcda-a8a7-4840-9eb0-aa6739f41750}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Core">
+      <UniqueIdentifier>{60779fca-c02a-47b1-be88-553e1d0083e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Core\Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Scene\Header Files\Connection.h">
@@ -222,52 +225,52 @@
     <ClInclude Include="Scene\Node Components\Header Files\NodeState.h">
       <Filter>Scene\Node Components\Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="UI\Header\UIButton.h">
+    <ClInclude Include="UI\Header\VGE.UIButton.h">
       <Filter>UI\Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="UI\Header\UICheckbox.h">
+    <ClInclude Include="UI\Header\VGE.UICheckbox.h">
       <Filter>UI\Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="UI\Header\UIColorPicker.h">
+    <ClInclude Include="UI\Header\VGE.UIColorPicker.h">
       <Filter>UI\Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="UI\Header\UIElement.h">
+    <ClInclude Include="UI\Header\VGE.UIElement.h">
       <Filter>UI\Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="UI\Header\UIFileDialog.h">
+    <ClInclude Include="UI\Header\VGE.UIFileDialog.h">
       <Filter>UI\Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="UI\Header\UIImage.h">
+    <ClInclude Include="UI\Header\VGE.UIImage.h">
       <Filter>UI\Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="UI\Header\UILabel.h">
+    <ClInclude Include="UI\Header\VGE.UILabel.h">
       <Filter>UI\Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="UI\Header\UIList.h">
+    <ClInclude Include="UI\Header\VGE.UIList.h">
       <Filter>UI\Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="UI\Header\UIManager.h">
+    <ClInclude Include="UI\Header\VGE.UIManager.h">
       <Filter>UI\Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="UI\Header\UIMenuBar.h">
+    <ClInclude Include="UI\Header\VGE.UIMenuBar.h">
       <Filter>UI\Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="UI\Header\UIPanel.h">
+    <ClInclude Include="UI\Header\VGE.UIPanel.h">
       <Filter>UI\Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="UI\Header\UIProgressBar.h">
+    <ClInclude Include="UI\Header\VGE.UIProgressBar.h">
       <Filter>UI\Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="UI\Header\UIRadioButton.h">
+    <ClInclude Include="UI\Header\VGE.UIRadioButton.h">
       <Filter>UI\Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="UI\Header\UISlider.h">
+    <ClInclude Include="UI\Header\VGE.UISlider.h">
       <Filter>UI\Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="UI\Header\UITextBox.h">
+    <ClInclude Include="UI\Header\VGE.UITextBox.h">
       <Filter>UI\Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="UI\Header\UITreeView.h">
+    <ClInclude Include="UI\Header\VGE.UITreeView.h">
       <Filter>UI\Header Files</Filter>
     </ClInclude>
     <ClInclude Include="AI\Header\DialogueManager.h">
@@ -390,7 +393,7 @@
     <ClInclude Include="Scripting\Header Files\GameMonkeyScriptScriptingEngine.h">
       <Filter>Scripting\Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Scripting\Header Files\Graph.h">
+    <ClInclude Include="Scripting\Header Files\VisualScriptingGraph.h">
       <Filter>Scripting\Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Scripting\Header Files\GraphExecutor.h">
@@ -437,6 +440,9 @@
     </ClInclude>
     <ClInclude Include="Utils\Header\DataTypeUtils.h">
       <Filter>Utils\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Header Files\VGE.Core.h">
+      <Filter>Core\Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

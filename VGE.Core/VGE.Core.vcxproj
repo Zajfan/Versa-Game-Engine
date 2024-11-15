@@ -144,6 +144,7 @@
     <ClInclude Include="Components\Header Files\RenderComponent.h" />
     <ClInclude Include="Components\Header Files\ScriptComponent.h" />
     <ClInclude Include="Components\Header Files\SpecificComponent.h" />
+    <ClInclude Include="Core\Header Files\VGE.Core.h" />
     <ClInclude Include="Events\Header Files\Event.h" />
     <ClInclude Include="Events\Header Files\InputEvent.h" />
     <ClInclude Include="Interfaces\Header Files\IAudioSource.h" />
@@ -184,7 +185,7 @@
     <ClInclude Include="Scripting\Header Files\AngelScriptScriptingEngine.h" />
     <ClInclude Include="Scripting\Header Files\CSharpScriptingEngine.h" />
     <ClInclude Include="Scripting\Header Files\GameMonkeyScriptScriptingEngine.h" />
-    <ClInclude Include="Scripting\Header Files\Graph.h" />
+    <ClInclude Include="Scripting\Header Files\VisualScriptingGraph.h" />
     <ClInclude Include="Scripting\Header Files\GraphExecutor.h" />
     <ClInclude Include="Scripting\Header Files\GraphLayout.h" />
     <ClInclude Include="Scripting\Header Files\GraphSerializer.h" />
@@ -199,22 +200,22 @@
     <ClInclude Include="Scripting\Header Files\VersaScriptingEngine.h" />
     <ClInclude Include="Scripting\Header Files\WebAssemblyScriptingEngine.h" />
     <ClInclude Include="Serialization\Header Files\NodeSerialization.h" />
-    <ClInclude Include="UI\Header\UIButton.h" />
-    <ClInclude Include="UI\Header\UICheckbox.h" />
-    <ClInclude Include="UI\Header\UIColorPicker.h" />
-    <ClInclude Include="UI\Header\UIElement.h" />
-    <ClInclude Include="UI\Header\UIFileDialog.h" />
-    <ClInclude Include="UI\Header\UIImage.h" />
-    <ClInclude Include="UI\Header\UILabel.h" />
-    <ClInclude Include="UI\Header\UIList.h" />
-    <ClInclude Include="UI\Header\UIManager.h" />
-    <ClInclude Include="UI\Header\UIMenuBar.h" />
-    <ClInclude Include="UI\Header\UIPanel.h" />
-    <ClInclude Include="UI\Header\UIProgressBar.h" />
-    <ClInclude Include="UI\Header\UIRadioButton.h" />
-    <ClInclude Include="UI\Header\UISlider.h" />
-    <ClInclude Include="UI\Header\UITextBox.h" />
-    <ClInclude Include="UI\Header\UITreeView.h" />
+    <ClInclude Include="UI\Header\VGE.UIButton.h" />
+    <ClInclude Include="UI\Header\VGE.UICheckbox.h" />
+    <ClInclude Include="UI\Header\VGE.UIColorPicker.h" />
+    <ClInclude Include="UI\Header\VGE.UIElement.h" />
+    <ClInclude Include="UI\Header\VGE.UIFileDialog.h" />
+    <ClInclude Include="UI\Header\VGE.UIImage.h" />
+    <ClInclude Include="UI\Header\VGE.UILabel.h" />
+    <ClInclude Include="UI\Header\VGE.UIList.h" />
+    <ClInclude Include="UI\Header\VGE.UIManager.h" />
+    <ClInclude Include="UI\Header\VGE.UIMenuBar.h" />
+    <ClInclude Include="UI\Header\VGE.UIPanel.h" />
+    <ClInclude Include="UI\Header\VGE.UIProgressBar.h" />
+    <ClInclude Include="UI\Header\VGE.UIRadioButton.h" />
+    <ClInclude Include="UI\Header\VGE.UISlider.h" />
+    <ClInclude Include="UI\Header\VGE.UITextBox.h" />
+    <ClInclude Include="UI\Header\VGE.UITreeView.h" />
     <ClInclude Include="Utils\Header\DataTypeUtils.h" />
   </ItemGroup>
   <ItemGroup>

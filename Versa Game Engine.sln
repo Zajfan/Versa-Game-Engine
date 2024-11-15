@@ -6,6 +6,9 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "VGE.Core", "VGE.Core\VGE.Core.vcxproj", "{53A6777C-CE4D-42A5-BE8D-EAFFF1D78898}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "VGE.Editor", "VGE.Editor\VGE.Editor.vcxproj", "{879E67C1-66AC-4A18-A489-203B275F5BAF}"
+	ProjectSection(ProjectDependencies) = postProject
+		{53A6777C-CE4D-42A5-BE8D-EAFFF1D78898} = {53A6777C-CE4D-42A5-BE8D-EAFFF1D78898}
+	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "VGE.Scripting", "VGE.Scripting\VGE.Scripting.vcxproj", "{D7CFAE8A-00AA-4062-AC29-AD9DB61B1715}"
 EndProject

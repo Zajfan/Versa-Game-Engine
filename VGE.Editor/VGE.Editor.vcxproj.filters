@@ -1,17 +1,126 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="Source Files">
-      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
-      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
-    </Filter>
-    <Filter Include="Header Files">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
-    </Filter>
     <Filter Include="Resource Files">
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Graph Editor">
+      <UniqueIdentifier>{6de20c07-3e0b-4397-9962-a49a063291f4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graph Editor\Header Files">
+      <UniqueIdentifier>{ea368492-5052-4f69-8fea-a92c78e17636}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graph Editor\Source Files">
+      <UniqueIdentifier>{c9b38aff-5ec9-4bef-9b26-ed64a62ebe0f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Editor">
+      <UniqueIdentifier>{9072c296-96a4-4153-86de-9c3570626dd9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Editor\Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Editor\Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="UI">
+      <UniqueIdentifier>{cb6d9e96-3259-4362-a0ce-ae298e155350}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UI\Header Files">
+      <UniqueIdentifier>{d388708f-de53-481b-8ffd-79bd3cceaf9f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UI\Source Files">
+      <UniqueIdentifier>{7be5738e-875c-4187-bc08-a15ecf56f9ea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UI\Widgets">
+      <UniqueIdentifier>{85764f04-5c0f-42e0-b1a1-22592a7ec929}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UI\Widgets\Header Files">
+      <UniqueIdentifier>{450cbce9-be04-4473-ac1e-a74a5ba5d498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UI\Widgets\Source Files">
+      <UniqueIdentifier>{434aef27-a7c9-42b1-bb0f-bfaae6dbad79}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UI\Themes">
+      <UniqueIdentifier>{fa28bc60-9a47-4dc7-bd46-b222c7d2550b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UI\Themes\Header Files">
+      <UniqueIdentifier>{482b7736-f0e9-40da-b03d-84d7156f30c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UI\Themes\Source Files">
+      <UniqueIdentifier>{4967a3a7-5c25-42fe-ac6b-3760c5de74a7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UI\Layouts">
+      <UniqueIdentifier>{c77f3be5-08c2-4831-ab8b-240edca93b1c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UI\Layouts\Header Files">
+      <UniqueIdentifier>{993e916a-74df-48ac-8b3e-ec7b2820c1fb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UI\Layouts\Source Files">
+      <UniqueIdentifier>{5fc4620f-0097-43fd-b68f-39cbd4b05883}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tools">
+      <UniqueIdentifier>{098bac54-8ceb-4df8-bcab-33b95fff9cf4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tools\Header Files">
+      <UniqueIdentifier>{ae4cd1c5-28e6-4941-a1b9-8e0f94820842}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tools\Source Files">
+      <UniqueIdentifier>{815845ea-f0bb-4cab-9417-e14c8cff7129}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene">
+      <UniqueIdentifier>{ce98fe72-9732-4b64-8bd9-e11d8dda2bcf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene\Source Files">
+      <UniqueIdentifier>{33a8104e-e3b4-4da1-928f-f695bcd848ff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene\Header Files">
+      <UniqueIdentifier>{499bc101-9562-4199-a5f3-cd4b8b0e0bba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Inspector">
+      <UniqueIdentifier>{f53a1f64-3ebb-486a-83bb-dad35c8ba96a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Inspector\Header Files">
+      <UniqueIdentifier>{875dfef3-1128-4875-a460-ba30ecf6745b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Inspector\Source File">
+      <UniqueIdentifier>{042a8364-b49e-45d3-ac1b-2074b843daa4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Graph Editor\Header Files\VGE.GraphEditor.h">
+      <Filter>Graph Editor\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor\Header Files\VGE.EditorDoc.h">
+      <Filter>Editor\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor\Header Files\VGE.EditorView.h">
+      <Filter>Editor\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor\Header Files\VGE.Editor.h">
+      <Filter>Editor\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\Header Files\VGE.EditorWindow.h">
+      <Filter>UI\Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Graph Editor\Source Files\VGE.GraphEditor.cpp">
+      <Filter>Graph Editor\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor\Source Files\VGE.EditorDoc.cpp">
+      <Filter>Editor\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor\Source Files\VGE.EditorView.cpp">
+      <Filter>Editor\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor\Source Files\VGE.Editor.cpp">
+      <Filter>Editor\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\Source Files\VGE.EditorWindow.cpp">
+      <Filter>UI\Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
