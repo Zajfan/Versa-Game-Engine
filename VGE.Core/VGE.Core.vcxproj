@@ -104,6 +104,8 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\Users\info\source\repos\My Projects\Versa Game Engine\VGE.Core\Scene\Node Components\Header Files;C:\Users\info\source\repos\My Projects\Versa Game Engine\VGE.Core\Scene\Header Files;C:\Users\info\source\repos\My Projects\Versa Game Engine\Third Party;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp20</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -134,13 +136,7 @@
     <ClInclude Include="Scene\Header Files\ISelectable.h" />
     <ClInclude Include="Scene\Header Files\Node.h" />
     <ClInclude Include="Scene\Header Files\NodeComponent.h" />
-    <ClInclude Include="Scene\Header Files\NodeConnections.h" />
-    <ClInclude Include="Scene\Header Files\NodeData.h" />
-    <ClInclude Include="Scene\Header Files\NodeDataType.h" />
-    <ClInclude Include="Scene\Header Files\NodeExecution.h" />
     <ClInclude Include="Scene\Header Files\NodeSerialization.h" />
-    <ClInclude Include="Scene\Header Files\NodeState.h" />
-    <ClInclude Include="Scene\Header Files\NodeVisuals.h" />
     <ClInclude Include="Scene\Header Files\Pin.h" />
     <ClInclude Include="Scene\Header Files\VariableNode.h" />
     <ClInclude Include="Scene\Node Components\Header Files\NodeConnections.h" />

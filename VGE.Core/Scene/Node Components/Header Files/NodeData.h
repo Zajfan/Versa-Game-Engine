@@ -2,6 +2,25 @@
 #define NODEDATA_H
 
 #include "Node.h"
+#include "Pin.h"
+#include "NodeDataType.h"
+
+class Node
+{
+public:
+	// Properties
+	std::map<std::string, std::any> NodeData;
+	// Methods
+	template <typename T>
+	void SetInputData(const std::string& pinName, const T& value);
+	template <typename T>
+	T GetOutputData(const std::string& pinName) const;
+
+private:
+	// Methods
+	template <typename T>
+	bool IsValidInput(const std::string& pinName, const T& value) const;
+};
 
 template <typename T>
 void Node::SetInputData(const std::string& pinName, const T& value)

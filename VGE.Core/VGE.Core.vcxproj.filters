@@ -75,37 +75,19 @@
     <ClInclude Include="Scene\Node Components\Header Files\NodeVisuals.h">
       <Filter>Scene\Node Components\Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Scene\Header Files\NodeConnections.h">
-      <Filter>Scene\Node Components\Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Scene\Node Components\Header Files\NodeConnections.h">
-      <Filter>Scene\Node Components\Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Scene\Header Files\NodeData.h">
       <Filter>Scene\Node Components\Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Scene\Node Components\Header Files\NodeData.h">
       <Filter>Scene\Node Components\Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Scene\Header Files\NodeDataType.h">
-      <Filter>Scene\Node Components\Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Scene\Node Components\Header Files\NodeDataType.h">
-      <Filter>Scene\Node Components\Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Scene\Header Files\NodeExecution.h">
       <Filter>Scene\Node Components\Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Scene\Node Components\Header Files\NodeExecution.h">
       <Filter>Scene\Node Components\Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Scene\Header Files\NodeState.h">
-      <Filter>Scene\Node Components\Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Scene\Node Components\Header Files\NodeState.h">
-      <Filter>Scene\Node Components\Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Scene\Header Files\NodeVisuals.h">
       <Filter>Scene\Node Components\Header Files</Filter>
     </ClInclude>
   </ItemGroup>

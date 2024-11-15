@@ -2,7 +2,15 @@
 #define NODESERIALIZATION_H
 
 #include "Node.h" 
-#include <tinyxml2.h>
+#include "Pin.h"
+
+#include <string>
+#include <vector>
+#include <any>
+#include <map>
+#include <string>
+#include <vector>
+#include <tinyxml2/tinyxml2.h>
 
 class NodeSerialization
 {

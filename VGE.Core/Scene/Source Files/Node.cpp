@@ -18,26 +18,57 @@ CreationTime(std::chrono::system_clock::now()),
 LastModifiedTime(std::chrono::system_clock::now()),
 Id(++g_nodeIdCounter)
 {
+    // Initialize the node with default values
+
     // 1. Set default size based on node type
-    // ... (same as before)
+    SetSize(glm::vec2(100.0f, 100.0f)); // Example default size
 
     // 2. Set default color based on node type
-    // ... (same as before)
+    SetColor("white"); // Example default color
 
     // 3. Add default pins based on node type
-    // ... (same as before)
+    AddInputPin("DefaultInput", NodeDataType::Float);
+    AddOutputPin("DefaultOutput", NodeDataType::Float);
 
     // 4. Set default values for other properties
-    // ... (same as before)
+    Comment = "Default comment";
+    VisualStyle = "Default style";
+	IsActive = true;
+	IsDirty = false;
+	IsExecuting = false;
 }
 
 Node::~Node()
 {
-    // ... (Potential cleanup logic)
+    // ... Cleanup logic
+
+	// Delete all child nodes
+	for (auto child : Children)
+	{
+		delete child;
+	}
+
+	// Clear the list of child nodes
+	Children.clear();
+
 }
 
 // Interface implementations
-// ... (IsSelected, Select, Deselect)
+void Node::Select()
+{
+	// ... (Select the node)
+}
+
+void Node::Deselect()
+{
+	// ... (Deselect the node)
+}
+
+bool Node::IsSelected() const
+{
+	// ... (Check if the node is selected)
+	return false;
+}
 
 void Node::Update(float deltaTime)
 {
@@ -84,6 +115,16 @@ void Node::AddComponent(std::unique_ptr<NodeComponent> component)
 void Node::Reset()
 {
     CurrentState = ExecutionState::NotExecuted;
-    // ... (Reset other state variables as needed)
-    // ... (Potentially reset the state of child nodes or components)
+
+	// Reset the state of all child nodes
+	for (auto child : Children)
+	{
+		child->Reset();
+	}
+
+	// Reset the state of all components
+	for (auto& component : Components)
+	{
+		component->Reset();
+	}
 }
