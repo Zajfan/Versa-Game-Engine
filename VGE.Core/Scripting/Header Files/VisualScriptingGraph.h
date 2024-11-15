@@ -26,8 +26,26 @@ public:
     void Serialize(const std::string& filePath);
     void Deserialize(const std::string& filePath);
     void Execute();
+	void Reset();
 
     // ... other graph-level operations (e.g., layout, search, filtering)
+
+private:
+	// Internal methods
+	void UpdateExecutionOrder();
+	void UpdateVisuals();
+	void UpdateData();
+	void UpdateState();
+	void UpdateConnections();
+	void UpdateHierarchy();
+	void UpdateTags();
+	void UpdateCustomProperties();
+	void UpdatePosition();
+	void UpdateSize();
+	void UpdateColor();
+	void UpdateVisualStyle();
+	void UpdateName();
+	void UpdateComment();
 };
 
 #endif // GRAPH_H
