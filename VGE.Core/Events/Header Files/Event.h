@@ -1,4 +1,3 @@
-#pragma once
 #ifndef EVENT_H
 #define EVENT_H
 
@@ -15,9 +14,14 @@ namespace vge
 		Event();
 		Event(const std::string& name);
 		virtual ~Event();
+		virtual void Initialize();
+		virtual void Terminate();
 		virtual void Update(float deltaTime);
 		virtual void Render();
 		virtual void Render(const glm::mat4& parentTransform);
+		virtual void HandleEvent(Event event);
+		virtual void Execute();
+		virtual void Reset();
 		std::string GetName();
 		void SetName(const std::string& name);
 		std::shared_ptr<Node> GetNode();
