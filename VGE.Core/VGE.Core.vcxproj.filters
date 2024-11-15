@@ -20,18 +20,6 @@
     <Filter Include="Scene">
       <UniqueIdentifier>{85db09e1-1a19-4cef-ad5e-60db1e9d743e}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Scene\Header Files">
-      <UniqueIdentifier>{f6a5d74b-ca5e-4d9a-a213-ada469dd2745}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Scene\Source Files">
-      <UniqueIdentifier>{ee814a55-4802-49ad-bcb9-afaa2faf820a}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Scene\Node Components">
-      <UniqueIdentifier>{269fdb29-4603-4b7b-9e85-b240232ec2ca}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Scene\Node Components\Header Files">
-      <UniqueIdentifier>{06550cbb-75f1-42c2-acdd-a12b25a2ec41}</UniqueIdentifier>
-    </Filter>
     <Filter Include="UI">
       <UniqueIdentifier>{e8b91930-d287-42a6-a80a-9013babcfea8}</UniqueIdentifier>
     </Filter>
@@ -49,18 +37,6 @@
     </Filter>
     <Filter Include="AI\Source Files">
       <UniqueIdentifier>{919876bb-c9d6-4554-9bae-ee1dfcc23408}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="AI\Core">
-      <UniqueIdentifier>{8b457446-7144-4c36-8b63-7e291c3e39e9}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="AI\Core\Agent">
-      <UniqueIdentifier>{c5c25d64-5f86-4051-b9e0-540aca78fe13}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="AI\Core\Agent\Header Files">
-      <UniqueIdentifier>{a2718894-fe86-4cce-acce-31d995f69f59}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="AI\Core\Agent\Source Files">
-      <UniqueIdentifier>{76851524-8770-4557-a4e4-6e588d5ad90e}</UniqueIdentifier>
     </Filter>
     <Filter Include="Components">
       <UniqueIdentifier>{a5b8d99a-0c42-49fb-a3a0-c180858d80ad}</UniqueIdentifier>
@@ -101,45 +77,6 @@
     <Filter Include="Interfaces">
       <UniqueIdentifier>{84b4d939-8a14-49d8-bdd8-52dc90d2e561}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Interfaces\Header Files">
-      <UniqueIdentifier>{a9a2c34e-9d2c-4ae2-94ef-2a0438db411c}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Interfaces\Source Files">
-      <UniqueIdentifier>{63338f56-1abf-4fc2-a1b4-42a3ac0bfb42}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Interfaces\Scene">
-      <UniqueIdentifier>{10f51a89-3bdb-489f-b13a-bf04ebf9fd72}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Interfaces\UI">
-      <UniqueIdentifier>{63d73849-a586-4e15-a323-5a7891a669fe}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Interfaces\UI\Header Files">
-      <UniqueIdentifier>{8e391e86-eb4c-4b3f-ae64-4006c76f81c6}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Interfaces\UI\Source Files">
-      <UniqueIdentifier>{0bda2f64-cd19-417d-931d-329b3edd7eb1}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Interfaces\Scene\Source Files">
-      <UniqueIdentifier>{69920631-ce45-4d11-a9ce-f74c35d9f434}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Interfaces\Scene\Header File">
-      <UniqueIdentifier>{646f7c27-b359-41fc-a2f1-b075c747e411}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Rendering\Source Files">
-      <UniqueIdentifier>{7f9557a3-a993-4dac-b133-af536e55af1d}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Rendering\Header Files">
-      <UniqueIdentifier>{ff7acf03-3517-4be0-8b15-b9d4512b5eb8}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Rendering\Shaders">
-      <UniqueIdentifier>{4551eefb-4f17-4eea-bff4-f066caf61c5b}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Rendering\Shaders\Source Files">
-      <UniqueIdentifier>{c028c4a2-dc4b-45b4-8add-d836afa4d164}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Rendering\Shaders\Header Files">
-      <UniqueIdentifier>{56f065d0-1256-4608-8977-837e6f30f948}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Scripting">
       <UniqueIdentifier>{0ecddc53-5c84-4514-9a52-8944c7e70c8a}</UniqueIdentifier>
     </Filter>
@@ -178,53 +115,188 @@
       <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
       <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
     </Filter>
+    <Filter Include="Rendering\Renderers">
+      <UniqueIdentifier>{3e5cf91c-4bfa-4589-a992-8d0b1b298ea0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rendering\Shaders">
+      <UniqueIdentifier>{e41367e4-8115-451f-848e-336867a066a7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rendering\Shaders\Header Files">
+      <UniqueIdentifier>{9a0dca54-b3a5-4146-bcae-8afce0dbe742}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rendering\Shaders\Source Files">
+      <UniqueIdentifier>{c43e93e3-f03f-4274-9095-6f788a517b6e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rendering\Renderers\Header Files">
+      <UniqueIdentifier>{502cba89-22dd-4316-9d70-07f393de3c72}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rendering\Renderers\Source Files">
+      <UniqueIdentifier>{359be274-bf6e-4da6-9429-f5b08f391b6e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Interfaces\Audio">
+      <UniqueIdentifier>{edc64ad1-0b44-4401-83e9-4a3a017b2d9c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Interfaces\General">
+      <UniqueIdentifier>{ca2b8aeb-9518-47b4-aa50-a9a8c874bd2b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Interfaces\Network">
+      <UniqueIdentifier>{256741d3-ed47-438f-bf9a-15ba0dae5615}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Interfaces\Physics">
+      <UniqueIdentifier>{8d35d79c-42a5-4fde-885a-11b68902d880}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Interfaces\Rendering">
+      <UniqueIdentifier>{e9f9c773-2690-432d-8bb6-d026fc865241}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Interfaces\Scene">
+      <UniqueIdentifier>{156a433f-6ade-4652-a7c0-e65a95662a34}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Interfaces\UI">
+      <UniqueIdentifier>{f5cfe241-7feb-473d-a68f-cd782bdf2a5e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Interfaces\Audio\Header Files">
+      <UniqueIdentifier>{0f628fda-8fa2-4995-837e-e4254010da09}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Interfaces\Audio\Source Files">
+      <UniqueIdentifier>{12e902f5-941f-40ae-9178-ede3142eb879}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Interfaces\General\Header Files">
+      <UniqueIdentifier>{3fd29ce7-f5f3-420e-a61f-c356508a2183}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Interfaces\General\Source Files">
+      <UniqueIdentifier>{8a7515db-06d6-4a8e-b3ce-10984a76f92f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Interfaces\Network\Header Files">
+      <UniqueIdentifier>{190e6672-42c5-4bff-a137-b8360e22ae97}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Interfaces\Network\Source Files">
+      <UniqueIdentifier>{a53c2d96-00af-40a9-9ed6-0828cb2e0da9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Interfaces\UI\Header Files">
+      <UniqueIdentifier>{18407809-5a4e-47ba-8890-f3c2fcae0f4e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Interfaces\UI\Source Files">
+      <UniqueIdentifier>{a5038134-9e90-4e17-81f3-6606230c62e5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Interfaces\Scene\Header Files">
+      <UniqueIdentifier>{bfc5d1f8-1ec0-49a2-bb7e-b623f19253f0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Interfaces\Scene\Source Files">
+      <UniqueIdentifier>{b91e1ef5-ab2c-4aa1-b5f5-ffeb562e7c8d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Interfaces\Rendering\Header Files">
+      <UniqueIdentifier>{b417d7ce-44e7-4865-9592-5676ec0ccc2c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Interfaces\Rendering\Source Files">
+      <UniqueIdentifier>{f2ebee14-0e9d-4fa3-9f3b-b3c5d5cb85fc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Interfaces\Physics\Header Files">
+      <UniqueIdentifier>{01ce408e-5bf7-4963-85b3-e8a850fb91a4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Interfaces\Physics\Source Files">
+      <UniqueIdentifier>{fdbc90a9-c137-46f1-9b01-98ece878f262}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene\AI">
+      <UniqueIdentifier>{2a595a12-5a33-42ea-8b11-5a40eb0f8baf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene\AI\Header Files">
+      <UniqueIdentifier>{7f753ef2-5d85-4912-a8d0-c9c2ff88f7cb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene\AI\Source Files">
+      <UniqueIdentifier>{b4c36dd9-d3d0-42ce-9153-6d172000fd81}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene\Animation">
+      <UniqueIdentifier>{5a0be70b-395d-4264-8b0c-086a8d0be10a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene\Components">
+      <UniqueIdentifier>{135138d8-9dd1-4500-9dbc-ff7d014921e3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene\Events">
+      <UniqueIdentifier>{d9edec51-1caf-466a-a287-7ab2ac987ed8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene\General">
+      <UniqueIdentifier>{01dd5f82-e214-4b93-ab79-9a2f0dfbf64e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene\Object Management">
+      <UniqueIdentifier>{d4b64d6d-84ab-4752-aec3-fcd8b2f2c651}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene\Physics">
+      <UniqueIdentifier>{26b5168c-857d-4356-aac7-b5a5494ca9e9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene\Rendering">
+      <UniqueIdentifier>{e7065834-8789-4fe1-bd1f-943bb2244b2a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene\Scene Graph">
+      <UniqueIdentifier>{45e2e024-3e24-42a4-8ac4-2dcd8bc211d2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene\Serialization">
+      <UniqueIdentifier>{c8c372e4-44df-4335-ade7-fc0672c87ff1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene\Spatial Partitioning">
+      <UniqueIdentifier>{36f415b2-a780-4f79-94f3-095b001d0057}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene\Animation\Header Files">
+      <UniqueIdentifier>{6122318f-47c8-4a58-a80b-9c2d559d29dd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene\Animation\Source Files">
+      <UniqueIdentifier>{a0b6472e-18bf-4b0f-9804-80baa4df9356}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene\Components\Header Files">
+      <UniqueIdentifier>{cc987dbd-c258-41d4-a9b9-41af51e6f0c1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene\Components\Source Files">
+      <UniqueIdentifier>{5dea6387-d3e4-4f0b-b7f1-7b00a16397ec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene\Events\Header Files">
+      <UniqueIdentifier>{6b8e7ebc-9686-4f33-865b-ef788c60051b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene\Events\Source Files">
+      <UniqueIdentifier>{4404fc1c-b690-4be8-b1cb-d3accbecd279}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene\General\Header Files">
+      <UniqueIdentifier>{d2f1bf72-3330-4153-9284-c0b85dc30176}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene\General\Source Files">
+      <UniqueIdentifier>{1529316b-285a-45f4-b11e-e94aec0a95db}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene\Spatial Partitioning\Header Files">
+      <UniqueIdentifier>{e67b2c0a-f819-4392-b7cb-fd0642368047}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene\Spatial Partitioning\Source Files">
+      <UniqueIdentifier>{a7578334-99b1-461d-b7cb-d876490b28fb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene\Serialization\Header Files">
+      <UniqueIdentifier>{af724390-68fa-4588-a506-77f788431272}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene\Serialization\Source Files">
+      <UniqueIdentifier>{24c8057a-4a4c-4b12-9ba5-44616d92161b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene\Scene Graph\Header Files">
+      <UniqueIdentifier>{ff33f4fa-d3b2-4271-ae70-1d5216e10e4a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene\Scene Graph\Source Files">
+      <UniqueIdentifier>{cd20fae1-523b-4501-b3fd-1acade254a0e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene\Rendering\Header Files">
+      <UniqueIdentifier>{c78579d2-f265-480f-a2af-4b694718c4e0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene\Rendering\Source Files">
+      <UniqueIdentifier>{9c06ec66-6158-4cef-aa63-e0821501b269}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene\Physics\Header Files">
+      <UniqueIdentifier>{b790816f-2e74-4666-9ab4-59500d592403}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene\Physics\Source Files">
+      <UniqueIdentifier>{568a41a8-6339-4542-af57-0ea185258997}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene\Object Management\Header Files">
+      <UniqueIdentifier>{af2578fb-f513-4b8b-8fbb-aec7d9c56d9d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene\Object Management\Source Files">
+      <UniqueIdentifier>{a88cedef-d59f-4ebc-b179-412df34473b2}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Scene\Header Files\Connection.h">
-      <Filter>Scene\Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Scene\Header Files\Event.h">
-      <Filter>Scene\Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Scene\Header Files\EventNode.h">
-      <Filter>Scene\Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Scene\Header Files\ISelectable.h">
-      <Filter>Scene\Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Scene\Header Files\Node.h">
-      <Filter>Scene\Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Scene\Header Files\NodeComponent.h">
-      <Filter>Scene\Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Scene\Header Files\NodeSerialization.h">
-      <Filter>Scene\Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Scene\Header Files\Pin.h">
-      <Filter>Scene\Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Scene\Header Files\VariableNode.h">
-      <Filter>Scene\Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Scene\Node Components\Header Files\NodeVisuals.h">
-      <Filter>Scene\Node Components\Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Scene\Node Components\Header Files\NodeConnections.h">
-      <Filter>Scene\Node Components\Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Scene\Node Components\Header Files\NodeData.h">
-      <Filter>Scene\Node Components\Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Scene\Node Components\Header Files\NodeDataType.h">
-      <Filter>Scene\Node Components\Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Scene\Node Components\Header Files\NodeExecution.h">
-      <Filter>Scene\Node Components\Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Scene\Node Components\Header Files\NodeState.h">
-      <Filter>Scene\Node Components\Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="UI\Header\VGE.UIButton.h">
       <Filter>UI\Header Files</Filter>
     </ClInclude>
@@ -246,7 +318,7 @@
     <ClInclude Include="UI\Header\VGE.UILabel.h">
       <Filter>UI\Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="UI\Header\VGE.UIList.h">
+    <ClInclude Include="UI\Header\VGE.UIListBox.h">
       <Filter>UI\Header Files</Filter>
     </ClInclude>
     <ClInclude Include="UI\Header\VGE.UIManager.h">
@@ -272,24 +344,6 @@
     </ClInclude>
     <ClInclude Include="UI\Header\VGE.UITreeView.h">
       <Filter>UI\Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="AI\Header\DialogueManager.h">
-      <Filter>AI\Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="AI\Header\KnowledgeBase.h">
-      <Filter>AI\Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="AI\Header\Logger.h">
-      <Filter>AI\Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="AI\Header\NLUComponent.h">
-      <Filter>AI\Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="AI\Core\Agent\Header\Agent.h">
-      <Filter>AI\Core\Agent\Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="AI\Core\Agent\Header\ChatbotAgent.h">
-      <Filter>AI\Core\Agent\Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Components\Header Files\AudioComponent.h">
       <Filter>Components\Header Files</Filter>
@@ -324,65 +378,8 @@
     <ClInclude Include="Events\Header Files\InputEvent.h">
       <Filter>Events\Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Interfaces\Header Files\ISelectable.h">
-      <Filter>Interfaces\Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Interfaces\Header Files\ISerializable.h">
-      <Filter>Interfaces\Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Interfaces\Header Files\ICloneable.h">
-      <Filter>Interfaces\Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Interfaces\Header Files\IEditable.h">
-      <Filter>Interfaces\Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Interfaces\Scene\Header Files\IRenderable.h">
-      <Filter>Interfaces\Scene\Header File</Filter>
-    </ClInclude>
-    <ClInclude Include="Interfaces\Scene\Header Files\IUpdatable.h">
-      <Filter>Interfaces\Scene\Header File</Filter>
-    </ClInclude>
-    <ClInclude Include="Interfaces\Scene\Header Files\ITransformable.h">
-      <Filter>Interfaces\Scene\Header File</Filter>
-    </ClInclude>
-    <ClInclude Include="Interfaces\Scene\Header Files\IDraggable.h">
-      <Filter>Interfaces\UI\Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Interfaces\Scene\Header Files\IResizable.h">
-      <Filter>Interfaces\UI\Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Interfaces\Scene\Header Files\IPhysicsObject.h">
-      <Filter>Interfaces\Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Interfaces\Header Files\IAudioSource.h">
-      <Filter>Interfaces\Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Interfaces\Header Files\INetworkable.h">
-      <Filter>Interfaces\Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Math\Header\Vector3.h">
       <Filter>Math\Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Rendering\Header\DirectXRenderer.h">
-      <Filter>Rendering\Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Rendering\Header\MetalRenderer.h">
-      <Filter>Rendering\Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Rendering\Header\OpenGLRenderer.h">
-      <Filter>Rendering\Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Rendering\Header\Renderer.h">
-      <Filter>Rendering\Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Rendering\Header\ShaderManager.h">
-      <Filter>Rendering\Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Rendering\Header\VulkanRenderer.h">
-      <Filter>Rendering\Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Rendering\Shaders\Header\ShaderManager.h">
-      <Filter>Rendering\Shaders\Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Scripting\Header Files\AngelScriptScriptingEngine.h">
       <Filter>Scripting\Header Files</Filter>
@@ -444,64 +441,166 @@
     <ClInclude Include="Core\Header Files\VGE.Core.h">
       <Filter>Core\Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="UI\Header\VGE.UIWindow.h">
+      <Filter>UI\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\Header\VGE.UILayout.h">
+      <Filter>UI\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\Header\VGE.UIVerticalBoxLayout.h">
+      <Filter>UI\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\Header\VGE.UIHorizontalBoxLayout.h">
+      <Filter>UI\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\Header\VGE.UIGridLayout.h">
+      <Filter>UI\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\Header\VGE.UIFlowLayout.h">
+      <Filter>UI\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\Header\VGE.UIDockingLayout.h">
+      <Filter>UI\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\Header\VGE.UISplitter.h">
+      <Filter>UI\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\Header\VGE.UITabControl.h">
+      <Filter>UI\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\Header\VGE.UITab.h">
+      <Filter>UI\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\Header\VGE.UIScrollView.h">
+      <Filter>UI\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\Header\VGE.UIContextMenu.h">
+      <Filter>UI\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\Header\VGE.UITooltip.h">
+      <Filter>UI\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\Header\VGE.UIDropdown.h">
+      <Filter>UI\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\Header\VGE.UISpinner.h">
+      <Filter>UI\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\Header\VGE.UIGroupBox.h">
+      <Filter>UI\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\Header\VGE.UISeparator.h">
+      <Filter>UI\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\Header\VGE.UIStatusBar.h">
+      <Filter>UI\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\Header\VGE.UIToolbar.h">
+      <Filter>UI\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\Header\VGE.UICanvas.h">
+      <Filter>UI\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\Header\VGE.UIPropertyGrid.h">
+      <Filter>UI\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\Header\VGE.UICurveEditor.h">
+      <Filter>UI\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\Header\VGE.UICodeEditor.h">
+      <Filter>UI\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\Header\VGE.UINodeGraphEditor.h">
+      <Filter>UI\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AI\Header Files\Agent.h">
+      <Filter>AI\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AI\Header Files\ChatbotAgent.h">
+      <Filter>AI\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AI\Header Files\DialogueManager.h">
+      <Filter>AI\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AI\Header Files\KnowledgeBase.h">
+      <Filter>AI\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AI\Header Files\Logger.h">
+      <Filter>AI\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AI\Header Files\NLUComponent.h">
+      <Filter>AI\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AI\Header Files\VGE.UIAIToolkit.h">
+      <Filter>AI\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AI\Header Files\VGE.UILearningAgent.h">
+      <Filter>AI\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AI\Header Files\VGE.UIPredictionEngine.h">
+      <Filter>AI\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AI\Header Files\VGE.UISuggestionEngine.h">
+      <Filter>AI\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Rendering\Renderers\Header Files\VGE.DirectXRenderer.h">
+      <Filter>Rendering\Renderers\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Rendering\Renderers\Header Files\VGE.MetalRenderer.h">
+      <Filter>Rendering\Renderers\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Rendering\Renderers\Header Files\VGE.OpenGLRenderer.h">
+      <Filter>Rendering\Renderers\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Rendering\Renderers\Header Files\VGE.VulkanRenderer.h">
+      <Filter>Rendering\Renderers\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Rendering\Shaders\Header Files\VGE.ShaderManager.h">
+      <Filter>Rendering\Shaders\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Audio\Header Files\IAudioSource.h">
+      <Filter>Interfaces\Audio\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\General\Header Files\ICloneable.h">
+      <Filter>Interfaces\General\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\General\Header Files\IEditable.h">
+      <Filter>Interfaces\General\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\General\Header Files\ISelectable.h">
+      <Filter>Interfaces\General\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\General\Header Files\ISerializable.h">
+      <Filter>Interfaces\General\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Network\Header Files\INetworkable.h">
+      <Filter>Interfaces\Network\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\UI\Header Files\IDraggable.h">
+      <Filter>Interfaces\UI\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\UI\Header Files\IResizable.h">
+      <Filter>Interfaces\UI\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Scene\Header Files\ITransformable.h">
+      <Filter>Interfaces\Scene\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Scene\Header Files\IUpdatable.h">
+      <Filter>Interfaces\Scene\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Rendering\Header Files\IRenderable.h">
+      <Filter>Interfaces\Rendering\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Rendering\Header Files\Renderer.h">
+      <Filter>Interfaces\Rendering\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Physics\Header Files\IPhysicsObject.h">
+      <Filter>Interfaces\Physics\Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Scene\Source Files\Connection.cpp">
-      <Filter>Scene\Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Scene\Source Files\Node.cpp">
-      <Filter>Scene\Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Scene\Source Files\NodeComponent.cpp">
-      <Filter>Scene\Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Scene\Source Files\NodeConnections.cpp">
-      <Filter>Scene\Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Scene\Source Files\NodeData.cpp">
-      <Filter>Scene\Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Scene\Source Files\NodeExecution.cpp">
-      <Filter>Scene\Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Scene\Source Files\NodeSerialization.cpp">
-      <Filter>Scene\Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="UI\Source\UILabel.cpp">
       <Filter>UI\Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="AI\Core\Agent\Source\Agent.cpp">
-      <Filter>AI\Core\Agent\Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="AI\Core\Agent\Source\ChatbotAgent.cpp">
-      <Filter>AI\Core\Agent\Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="AI\Source\BehaviorTrees.cpp">
-      <Filter>AI\Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="AI\Source\DecisionMaking.cpp">
-      <Filter>AI\Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="AI\Source\FiniteStateMachines.cpp">
-      <Filter>AI\Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="AI\Source\GOAP.cpp">
-      <Filter>AI\Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="AI\Source\GroupBehavior.cpp">
-      <Filter>AI\Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="AI\Source\LearningAI.cpp">
-      <Filter>AI\Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="AI\Source\Pathfinding.cpp">
-      <Filter>AI\Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="AI\Source\PersonalityandEmotion.cpp">
-      <Filter>AI\Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="AI\Source\SensoryPerception.cpp">
-      <Filter>AI\Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Components\Source Files\Component.cpp">
       <Filter>Components\Source Files</Filter>
@@ -520,18 +619,6 @@
     </ClCompile>
     <ClCompile Include="Data Structures\Source Files\DataStructures.cpp">
       <Filter>Data Structures\Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Interfaces\Source Files\ISelectable.cpp">
-      <Filter>Interfaces\Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Rendering\Source\OpenGLRenderer.cpp">
-      <Filter>Rendering\Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Rendering\Source\ShaderManager.cpp">
-      <Filter>Rendering\Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Rendering\Shaders\Source\ShaderManager.cpp">
-      <Filter>Rendering\Shaders\Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Scripting\Source Files\Graph.cpp">
       <Filter>Scripting\Source Files</Filter>
@@ -553,6 +640,48 @@
     </ClCompile>
     <ClCompile Include="Serialization\Source Files\NodeSerialization.cpp">
       <Filter>Serialization\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AI\Source Files\Agent.cpp">
+      <Filter>AI\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AI\Source Files\BehaviorTrees.cpp">
+      <Filter>AI\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AI\Source Files\ChatbotAgent.cpp">
+      <Filter>AI\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AI\Source Files\DecisionMaking.cpp">
+      <Filter>AI\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AI\Source Files\FiniteStateMachines.cpp">
+      <Filter>AI\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AI\Source Files\GOAP.cpp">
+      <Filter>AI\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AI\Source Files\GroupBehavior.cpp">
+      <Filter>AI\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AI\Source Files\LearningAI.cpp">
+      <Filter>AI\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AI\Source Files\Pathfinding.cpp">
+      <Filter>AI\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AI\Source Files\PersonalityandEmotion.cpp">
+      <Filter>AI\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AI\Source Files\SensoryPerception.cpp">
+      <Filter>AI\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Rendering\Renderers\Source Files\VGE.OpenGLRenderer.cpp">
+      <Filter>Rendering\Renderers\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Rendering\Shaders\Source Files\VGE.ShaderManager.cpp">
+      <Filter>Rendering\Shaders\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Interfaces\General\Source Files\ISelectable.cpp">
+      <Filter>Interfaces\General\Source Files</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
