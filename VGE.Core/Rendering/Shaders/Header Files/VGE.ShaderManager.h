@@ -3,7 +3,7 @@
 
 #include <string>
 #include <unordered_map>
-#include <glad.h>
+#include <glad/glad.h>
 #include <glm/glm.hpp>
 
 class ShaderManager

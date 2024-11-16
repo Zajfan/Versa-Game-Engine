@@ -1,10 +1,10 @@
-#ifndef NODESTATE_H
-#define NODESTATE_H
+#ifndef NODESTATES_H
+#define NODESTATES_H
 
-#include <string> // Include for std::string
+#include <string>
 
 // Define state-related properties and methods of a Node
-class NodeState
+class NodeStates
 {
 public:
     enum class ExecutionState { NotExecuted, Executing, Executed, Failed };
@@ -19,4 +19,4 @@ public:
     void ClearError();
 };
 
-#endif // NODESTATE_H
+#endif // NODESTATES_H

@@ -2,6 +2,7 @@
 #define AGENT_H
 
 #include <glm/glm.hpp>
+#include "Pathfinding.h"
 
 namespace VGE
 {
@@ -27,9 +28,10 @@ namespace VGE
 				glm::vec3 Arrive(glm::vec3 target, float slowingRadius);
 				glm::vec3 Pursuit(Agent* target);
 				glm::vec3 Evade(Agent* target);
-				void Update();
+				void Update(float deltaTime);
 				float GetMaxSpeed();
 				float GetMaxForce();
+				void SetGoal(const glm::vec3& goalPosition);
 			private:
 				glm::vec3 m_position;
 				glm::vec3 m_velocity;
@@ -37,6 +39,9 @@ namespace VGE
 				glm::vec3 m_steeringForce;
 				float m_maxSpeed;
 				float m_maxForce;
+				Pathfinding* pathfinding_; // Add this line to declare pathfinding_ member variable
+				bool hasGoal_;
+				glm::vec3 goalPosition_;
 			};
 		}
 	}

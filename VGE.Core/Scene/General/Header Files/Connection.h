@@ -1,11 +1,14 @@
+#pragma once
 #ifndef CONNECTION_H
 #define CONNECTION_H
 
 #include "Node.h"
 #include "Pin.h"
 
-class Connection
-{
+class Node;
+class Pin;
+
+class Connection {
 public:
     Node* Source = nullptr;
     Node* Target = nullptr;

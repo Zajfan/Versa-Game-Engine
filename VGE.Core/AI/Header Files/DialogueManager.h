@@ -2,9 +2,10 @@
 #define DIALOGUEMANAGER_H
 
 #include <string>
-#include "NLUResult.h" // Include the NLUResult struct
+#include "NLUResult.h"
+#include "KnowledgeBase.h"
 
-class KnowledgeBase; // Forward declaration
+class KnowledgeBase;
 
 class DialogueManager {
 public:

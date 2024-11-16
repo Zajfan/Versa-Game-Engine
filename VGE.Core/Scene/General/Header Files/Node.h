@@ -14,12 +14,14 @@
 #include "Event.h"
 #include "ISelectable.h"
 #include "Pin.h"
+
+// Node includes
 #include "NodeDataType.h"
 #include "NodeVisuals.h"
 #include "NodeExecution.h"
 #include "NodeConnections.h"
 #include "NodeData.h"
-#include "NodeState.h"
+#include "NodeStates.h"
 
 class Node : public ISelectable
 {

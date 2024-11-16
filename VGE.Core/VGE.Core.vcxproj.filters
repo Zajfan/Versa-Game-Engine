@@ -297,54 +297,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="UI\Header\VGE.UIButton.h">
-      <Filter>UI\Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="UI\Header\VGE.UICheckbox.h">
-      <Filter>UI\Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="UI\Header\VGE.UIColorPicker.h">
-      <Filter>UI\Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="UI\Header\VGE.UIElement.h">
-      <Filter>UI\Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="UI\Header\VGE.UIFileDialog.h">
-      <Filter>UI\Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="UI\Header\VGE.UIImage.h">
-      <Filter>UI\Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="UI\Header\VGE.UILabel.h">
-      <Filter>UI\Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="UI\Header\VGE.UIListBox.h">
-      <Filter>UI\Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="UI\Header\VGE.UIManager.h">
-      <Filter>UI\Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="UI\Header\VGE.UIMenuBar.h">
-      <Filter>UI\Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="UI\Header\VGE.UIPanel.h">
-      <Filter>UI\Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="UI\Header\VGE.UIProgressBar.h">
-      <Filter>UI\Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="UI\Header\VGE.UIRadioButton.h">
-      <Filter>UI\Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="UI\Header\VGE.UISlider.h">
-      <Filter>UI\Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="UI\Header\VGE.UITextBox.h">
-      <Filter>UI\Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="UI\Header\VGE.UITreeView.h">
-      <Filter>UI\Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Components\Header Files\AudioComponent.h">
       <Filter>Components\Header Files</Filter>
     </ClInclude>
@@ -441,78 +393,6 @@
     <ClInclude Include="Core\Header Files\VGE.Core.h">
       <Filter>Core\Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="UI\Header\VGE.UIWindow.h">
-      <Filter>UI\Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="UI\Header\VGE.UILayout.h">
-      <Filter>UI\Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="UI\Header\VGE.UIVerticalBoxLayout.h">
-      <Filter>UI\Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="UI\Header\VGE.UIHorizontalBoxLayout.h">
-      <Filter>UI\Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="UI\Header\VGE.UIGridLayout.h">
-      <Filter>UI\Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="UI\Header\VGE.UIFlowLayout.h">
-      <Filter>UI\Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="UI\Header\VGE.UIDockingLayout.h">
-      <Filter>UI\Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="UI\Header\VGE.UISplitter.h">
-      <Filter>UI\Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="UI\Header\VGE.UITabControl.h">
-      <Filter>UI\Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="UI\Header\VGE.UITab.h">
-      <Filter>UI\Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="UI\Header\VGE.UIScrollView.h">
-      <Filter>UI\Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="UI\Header\VGE.UIContextMenu.h">
-      <Filter>UI\Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="UI\Header\VGE.UITooltip.h">
-      <Filter>UI\Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="UI\Header\VGE.UIDropdown.h">
-      <Filter>UI\Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="UI\Header\VGE.UISpinner.h">
-      <Filter>UI\Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="UI\Header\VGE.UIGroupBox.h">
-      <Filter>UI\Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="UI\Header\VGE.UISeparator.h">
-      <Filter>UI\Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="UI\Header\VGE.UIStatusBar.h">
-      <Filter>UI\Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="UI\Header\VGE.UIToolbar.h">
-      <Filter>UI\Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="UI\Header\VGE.UICanvas.h">
-      <Filter>UI\Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="UI\Header\VGE.UIPropertyGrid.h">
-      <Filter>UI\Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="UI\Header\VGE.UICurveEditor.h">
-      <Filter>UI\Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="UI\Header\VGE.UICodeEditor.h">
-      <Filter>UI\Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="UI\Header\VGE.UINodeGraphEditor.h">
-      <Filter>UI\Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="AI\Header Files\Agent.h">
       <Filter>AI\Header Files</Filter>
     </ClInclude>
@@ -597,11 +477,167 @@
     <ClInclude Include="Interfaces\Physics\Header Files\IPhysicsObject.h">
       <Filter>Interfaces\Physics\Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="UI\Header Files\VGE.UIButton.h">
+      <Filter>UI\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\Header Files\VGE.UICanvas.h">
+      <Filter>UI\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\Header Files\VGE.UICheckbox.h">
+      <Filter>UI\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\Header Files\VGE.UICodeEditor.h">
+      <Filter>UI\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\Header Files\VGE.UIColorPicker.h">
+      <Filter>UI\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\Header Files\VGE.UIContextMenu.h">
+      <Filter>UI\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\Header Files\VGE.UICurveEditor.h">
+      <Filter>UI\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\Header Files\VGE.UIDockingLayout.h">
+      <Filter>UI\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\Header Files\VGE.UIDropdown.h">
+      <Filter>UI\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\Header Files\VGE.UIElement.h">
+      <Filter>UI\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\Header Files\VGE.UIFileDialog.h">
+      <Filter>UI\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\Header Files\VGE.UIFlowLayout.h">
+      <Filter>UI\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\Header Files\VGE.UIGridLayout.h">
+      <Filter>UI\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\Header Files\VGE.UIGroupBox.h">
+      <Filter>UI\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\Header Files\VGE.UIHorizontalBoxLayout.h">
+      <Filter>UI\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\Header Files\VGE.UIImage.h">
+      <Filter>UI\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\Header Files\VGE.UILabel.h">
+      <Filter>UI\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\Header Files\VGE.UILayout.h">
+      <Filter>UI\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\Header Files\VGE.UIListBox.h">
+      <Filter>UI\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\Header Files\VGE.UIManager.h">
+      <Filter>UI\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\Header Files\VGE.UIMenuBar.h">
+      <Filter>UI\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\Header Files\VGE.UINodeGraphEditor.h">
+      <Filter>UI\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\Header Files\VGE.UIPanel.h">
+      <Filter>UI\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\Header Files\VGE.UIProgressBar.h">
+      <Filter>UI\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\Header Files\VGE.UIPropertyGrid.h">
+      <Filter>UI\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\Header Files\VGE.UIRadioButton.h">
+      <Filter>UI\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\Header Files\VGE.UIScrollView.h">
+      <Filter>UI\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\Header Files\VGE.UISeparator.h">
+      <Filter>UI\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\Header Files\VGE.UISlider.h">
+      <Filter>UI\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\Header Files\VGE.UISpinner.h">
+      <Filter>UI\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\Header Files\VGE.UISplitter.h">
+      <Filter>UI\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\Header Files\VGE.UIStatusBar.h">
+      <Filter>UI\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\Header Files\VGE.UITab.h">
+      <Filter>UI\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\Header Files\VGE.UITabControl.h">
+      <Filter>UI\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\Header Files\VGE.UITextBox.h">
+      <Filter>UI\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\Header Files\VGE.UIToolbar.h">
+      <Filter>UI\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\Header Files\VGE.UITooltip.h">
+      <Filter>UI\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\Header Files\VGE.UITreeView.h">
+      <Filter>UI\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\Header Files\VGE.UIVerticalBoxLayout.h">
+      <Filter>UI\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\Header Files\VGE.UIWindow.h">
+      <Filter>UI\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\Components\Header Files\NodeConnections.h">
+      <Filter>Scene\Components\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\Components\Header Files\NodeData.h">
+      <Filter>Scene\Components\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\Components\Header Files\NodeDataType.h">
+      <Filter>Scene\Components\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\Components\Header Files\NodeExecution.h">
+      <Filter>Scene\Components\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\Components\Header Files\NodeStates.h">
+      <Filter>Scene\Components\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\Components\Header Files\NodeVisuals.h">
+      <Filter>Scene\Components\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\Components\Header Files\NodeEvents.h">
+      <Filter>Scene\Components\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\Components\Header Files\NodeActions.h">
+      <Filter>Scene\Components\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\Components\Header Files\NodeProperties.h">
+      <Filter>Scene\Components\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\Components\Header Files\NodeChildren.h">
+      <Filter>Scene\Components\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AI\Header Files\Pathfinding.h">
+      <Filter>AI\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Scripting\Header Files\Graph.h">
+      <Filter>Scripting\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AI\Header Files\NLUResult.h">
+      <Filter>AI\Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="UI\Source\UILabel.cpp">
-      <Filter>UI\Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="Components\Source Files\Component.cpp">
       <Filter>Components\Source Files</Filter>
     </ClCompile>
@@ -682,6 +718,12 @@
     </ClCompile>
     <ClCompile Include="Interfaces\General\Source Files\ISelectable.cpp">
       <Filter>Interfaces\General\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\Source Files\UILabel.cpp">
+      <Filter>UI\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\Source Files\VGE.UIWindow.cpp">
+      <Filter>UI\Source Files</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

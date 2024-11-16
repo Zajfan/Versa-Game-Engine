@@ -104,7 +104,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>C:\Users\info\source\repos\My Projects\Versa Game Engine\Third Party;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\info\source\repos\My Projects\Versa Game Engine\VGE.Core\AI\Header Files;C:\Users\info\source\repos\My Projects\Versa Game Engine\VGE.Core\Animation\Header Files;C:\Users\info\source\repos\My Projects\Versa Game Engine\VGE.Core\Audio\Spatial\Header Files;C:\Users\info\source\repos\My Projects\Versa Game Engine\VGE.Core\Audio\Mixing\Header Files;C:\Users\info\source\repos\My Projects\Versa Game Engine\VGE.Core\Audio\General\Header Files;C:\Users\info\source\repos\My Projects\Versa Game Engine\VGE.Core\Components\Header Files;C:\Users\info\source\repos\My Projects\Versa Game Engine\VGE.Core\Core\Header Files;C:\Users\info\source\repos\My Projects\Versa Game Engine\VGE.Core\Data Structures\Header Files;C:\Users\info\source\repos\My Projects\Versa Game Engine\VGE.Core\Events\Header Files;C:\Users\info\source\repos\My Projects\Versa Game Engine\VGE.Core\Input\Header Files;C:\Users\info\source\repos\My Projects\Versa Game Engine\VGE.Core\Interfaces\UI\Header Files;C:\Users\info\source\repos\My Projects\Versa Game Engine\VGE.Core\Interfaces\Scene\Header Files;C:\Users\info\source\repos\My Projects\Versa Game Engine\VGE.Core\Interfaces\Rendering\Header Files;C:\Users\info\source\repos\My Projects\Versa Game Engine\VGE.Core\Interfaces\Physics\Header Files;C:\Users\info\source\repos\My Projects\Versa Game Engine\VGE.Core\Interfaces\Network\Header Files;C:\Users\info\source\repos\My Projects\Versa Game Engine\VGE.Core\Interfaces\General\Header Files;C:\Users\info\source\repos\My Projects\Versa Game Engine\VGE.Core\Interfaces\Audio\Header Files;C:\Users\info\source\repos\My Projects\Versa Game Engine\VGE.Core\Math\Header Files;C:\Users\info\source\repos\My Projects\Versa Game Engine\VGE.Core\Networking\Header Files;C:\Users\info\source\repos\My Projects\Versa Game Engine\VGE.Core\Physics\Header Files;C:\Users\info\source\repos\My Projects\Versa Game Engine\VGE.Core\Rendering\Shaders\Header Files;C:\Users\info\source\repos\My Projects\Versa Game Engine\VGE.Core\Rendering\Renderers\Header Files;C:\Users\info\source\repos\My Projects\Versa Game Engine\VGE.Core\Scene\Animation\Header Files;C:\Users\info\source\repos\My Projects\Versa Game Engine\VGE.Core\Scene\Components\Header Files;C:\Users\info\source\repos\My Projects\Versa Game Engine\VGE.Core\Scene\Events\Header Files;C:\Users\info\source\repos\My Projects\Versa Game Engine\VGE.Core\Scene\General\Header Files;C:\Users\info\source\repos\My Projects\Versa Game Engine\VGE.Core\Scene\Object Management\Header Files;C:\Users\info\source\repos\My Projects\Versa Game Engine\VGE.Core\Scene\Physics\Header Files;C:\Users\info\source\repos\My Projects\Versa Game Engine\VGE.Core\Scene\Rendering\Header Files;C:\Users\info\source\repos\My Projects\Versa Game Engine\VGE.Core\Scene\Scene Graph\Header Files;C:\Users\info\source\repos\My Projects\Versa Game Engine\VGE.Core\Scene\Serialization\Header Files;C:\Users\info\source\repos\My Projects\Versa Game Engine\VGE.Core\Scene\Spatial Partitioning\Header Files;C:\Users\info\source\repos\My Projects\Versa Game Engine\VGE.Core\Scripting\Header Files;C:\Users\info\source\repos\My Projects\Versa Game Engine\VGE.Core\Scripts\Header Files;C:\Users\info\source\repos\My Projects\Versa Game Engine\VGE.Core\Serialization\Header Files;C:\Users\info\source\repos\My Projects\Versa Game Engine\VGE.Core\Time\Header Files;C:\Users\info\source\repos\My Projects\Versa Game Engine\VGE.Core\UI\Header Files;C:\Users\info\source\repos\My Projects\Versa Game Engine\VGE.Core\Utils\Header Files;C:\Users\info\source\repos\My Projects\Versa Game Engine\VGE.Core\Voxel\Header Files;C:\Users\info\source\repos\My Projects\Versa Game Engine\VGE.Third Party;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <LanguageStandard>stdcpp20</LanguageStandard>
     </ClCompile>
     <Link>
@@ -135,6 +135,8 @@
     <ClInclude Include="AI\Header Files\KnowledgeBase.h" />
     <ClInclude Include="AI\Header Files\Logger.h" />
     <ClInclude Include="AI\Header Files\NLUComponent.h" />
+    <ClInclude Include="AI\Header Files\NLUResult.h" />
+    <ClInclude Include="AI\Header Files\Pathfinding.h" />
     <ClInclude Include="AI\Header Files\VGE.UIAIToolkit.h" />
     <ClInclude Include="AI\Header Files\VGE.UILearningAgent.h" />
     <ClInclude Include="AI\Header Files\VGE.UIPredictionEngine.h" />
@@ -170,9 +172,20 @@
     <ClInclude Include="Rendering\Renderers\Header Files\VGE.OpenGLRenderer.h" />
     <ClInclude Include="Rendering\Renderers\Header Files\VGE.VulkanRenderer.h" />
     <ClInclude Include="Rendering\Shaders\Header Files\VGE.ShaderManager.h" />
+    <ClInclude Include="Scene\Components\Header Files\NodeActions.h" />
+    <ClInclude Include="Scene\Components\Header Files\NodeChildren.h" />
+    <ClInclude Include="Scene\Components\Header Files\NodeConnections.h" />
+    <ClInclude Include="Scene\Components\Header Files\NodeData.h" />
+    <ClInclude Include="Scene\Components\Header Files\NodeDataType.h" />
+    <ClInclude Include="Scene\Components\Header Files\NodeEvents.h" />
+    <ClInclude Include="Scene\Components\Header Files\NodeExecution.h" />
+    <ClInclude Include="Scene\Components\Header Files\NodeProperties.h" />
+    <ClInclude Include="Scene\Components\Header Files\NodeStates.h" />
+    <ClInclude Include="Scene\Components\Header Files\NodeVisuals.h" />
     <ClInclude Include="Scripting\Header Files\AngelScriptScriptingEngine.h" />
     <ClInclude Include="Scripting\Header Files\CSharpScriptingEngine.h" />
     <ClInclude Include="Scripting\Header Files\GameMonkeyScriptScriptingEngine.h" />
+    <ClInclude Include="Scripting\Header Files\Graph.h" />
     <ClInclude Include="Scripting\Header Files\VisualScriptingGraph.h" />
     <ClInclude Include="Scripting\Header Files\GraphExecutor.h" />
     <ClInclude Include="Scripting\Header Files\GraphLayout.h" />
@@ -188,46 +201,46 @@
     <ClInclude Include="Scripting\Header Files\VersaScriptingEngine.h" />
     <ClInclude Include="Scripting\Header Files\WebAssemblyScriptingEngine.h" />
     <ClInclude Include="Serialization\Header Files\NodeSerialization.h" />
-    <ClInclude Include="UI\Header\VGE.UIButton.h" />
-    <ClInclude Include="UI\Header\VGE.UICanvas.h" />
-    <ClInclude Include="UI\Header\VGE.UICheckbox.h" />
-    <ClInclude Include="UI\Header\VGE.UICodeEditor.h" />
-    <ClInclude Include="UI\Header\VGE.UIColorPicker.h" />
-    <ClInclude Include="UI\Header\VGE.UIContextMenu.h" />
-    <ClInclude Include="UI\Header\VGE.UICurveEditor.h" />
-    <ClInclude Include="UI\Header\VGE.UIDockingLayout.h" />
-    <ClInclude Include="UI\Header\VGE.UIDropdown.h" />
-    <ClInclude Include="UI\Header\VGE.UIElement.h" />
-    <ClInclude Include="UI\Header\VGE.UIFileDialog.h" />
-    <ClInclude Include="UI\Header\VGE.UIFlowLayout.h" />
-    <ClInclude Include="UI\Header\VGE.UIGridLayout.h" />
-    <ClInclude Include="UI\Header\VGE.UIGroupBox.h" />
-    <ClInclude Include="UI\Header\VGE.UIHorizontalBoxLayout.h" />
-    <ClInclude Include="UI\Header\VGE.UIImage.h" />
-    <ClInclude Include="UI\Header\VGE.UILabel.h" />
-    <ClInclude Include="UI\Header\VGE.UILayout.h" />
-    <ClInclude Include="UI\Header\VGE.UIListBox.h" />
-    <ClInclude Include="UI\Header\VGE.UIManager.h" />
-    <ClInclude Include="UI\Header\VGE.UIMenuBar.h" />
-    <ClInclude Include="UI\Header\VGE.UINodeGraphEditor.h" />
-    <ClInclude Include="UI\Header\VGE.UIPanel.h" />
-    <ClInclude Include="UI\Header\VGE.UIProgressBar.h" />
-    <ClInclude Include="UI\Header\VGE.UIPropertyGrid.h" />
-    <ClInclude Include="UI\Header\VGE.UIRadioButton.h" />
-    <ClInclude Include="UI\Header\VGE.UIScrollView.h" />
-    <ClInclude Include="UI\Header\VGE.UISeparator.h" />
-    <ClInclude Include="UI\Header\VGE.UISlider.h" />
-    <ClInclude Include="UI\Header\VGE.UISpinner.h" />
-    <ClInclude Include="UI\Header\VGE.UISplitter.h" />
-    <ClInclude Include="UI\Header\VGE.UIStatusBar.h" />
-    <ClInclude Include="UI\Header\VGE.UITab.h" />
-    <ClInclude Include="UI\Header\VGE.UITabControl.h" />
-    <ClInclude Include="UI\Header\VGE.UITextBox.h" />
-    <ClInclude Include="UI\Header\VGE.UIToolbar.h" />
-    <ClInclude Include="UI\Header\VGE.UITooltip.h" />
-    <ClInclude Include="UI\Header\VGE.UITreeView.h" />
-    <ClInclude Include="UI\Header\VGE.UIVerticalBoxLayout.h" />
-    <ClInclude Include="UI\Header\VGE.UIWindow.h" />
+    <ClInclude Include="UI\Header Files\VGE.UIButton.h" />
+    <ClInclude Include="UI\Header Files\VGE.UICanvas.h" />
+    <ClInclude Include="UI\Header Files\VGE.UICheckbox.h" />
+    <ClInclude Include="UI\Header Files\VGE.UICodeEditor.h" />
+    <ClInclude Include="UI\Header Files\VGE.UIColorPicker.h" />
+    <ClInclude Include="UI\Header Files\VGE.UIContextMenu.h" />
+    <ClInclude Include="UI\Header Files\VGE.UICurveEditor.h" />
+    <ClInclude Include="UI\Header Files\VGE.UIDockingLayout.h" />
+    <ClInclude Include="UI\Header Files\VGE.UIDropdown.h" />
+    <ClInclude Include="UI\Header Files\VGE.UIElement.h" />
+    <ClInclude Include="UI\Header Files\VGE.UIFileDialog.h" />
+    <ClInclude Include="UI\Header Files\VGE.UIFlowLayout.h" />
+    <ClInclude Include="UI\Header Files\VGE.UIGridLayout.h" />
+    <ClInclude Include="UI\Header Files\VGE.UIGroupBox.h" />
+    <ClInclude Include="UI\Header Files\VGE.UIHorizontalBoxLayout.h" />
+    <ClInclude Include="UI\Header Files\VGE.UIImage.h" />
+    <ClInclude Include="UI\Header Files\VGE.UILabel.h" />
+    <ClInclude Include="UI\Header Files\VGE.UILayout.h" />
+    <ClInclude Include="UI\Header Files\VGE.UIListBox.h" />
+    <ClInclude Include="UI\Header Files\VGE.UIManager.h" />
+    <ClInclude Include="UI\Header Files\VGE.UIMenuBar.h" />
+    <ClInclude Include="UI\Header Files\VGE.UINodeGraphEditor.h" />
+    <ClInclude Include="UI\Header Files\VGE.UIPanel.h" />
+    <ClInclude Include="UI\Header Files\VGE.UIProgressBar.h" />
+    <ClInclude Include="UI\Header Files\VGE.UIPropertyGrid.h" />
+    <ClInclude Include="UI\Header Files\VGE.UIRadioButton.h" />
+    <ClInclude Include="UI\Header Files\VGE.UIScrollView.h" />
+    <ClInclude Include="UI\Header Files\VGE.UISeparator.h" />
+    <ClInclude Include="UI\Header Files\VGE.UISlider.h" />
+    <ClInclude Include="UI\Header Files\VGE.UISpinner.h" />
+    <ClInclude Include="UI\Header Files\VGE.UISplitter.h" />
+    <ClInclude Include="UI\Header Files\VGE.UIStatusBar.h" />
+    <ClInclude Include="UI\Header Files\VGE.UITab.h" />
+    <ClInclude Include="UI\Header Files\VGE.UITabControl.h" />
+    <ClInclude Include="UI\Header Files\VGE.UITextBox.h" />
+    <ClInclude Include="UI\Header Files\VGE.UIToolbar.h" />
+    <ClInclude Include="UI\Header Files\VGE.UITooltip.h" />
+    <ClInclude Include="UI\Header Files\VGE.UITreeView.h" />
+    <ClInclude Include="UI\Header Files\VGE.UIVerticalBoxLayout.h" />
+    <ClInclude Include="UI\Header Files\VGE.UIWindow.h" />
     <ClInclude Include="Utils\Header\DataTypeUtils.h" />
   </ItemGroup>
   <ItemGroup>
@@ -258,7 +271,8 @@
     <ClCompile Include="Scripting\Source Files\LuaScriptingEngine.cpp" />
     <ClCompile Include="Scripting\Source Files\ScriptingEngine.cpp" />
     <ClCompile Include="Serialization\Source Files\NodeSerialization.cpp" />
-    <ClCompile Include="UI\Source\UILabel.cpp" />
+    <ClCompile Include="UI\Source Files\UILabel.cpp" />
+    <ClCompile Include="UI\Source Files\VGE.UIWindow.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
