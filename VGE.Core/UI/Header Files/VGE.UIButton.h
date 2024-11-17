@@ -1,30 +1,36 @@
-// UIButton.h (Example UI element class)
+// Last update: 21:00 20-10-2019
+// VGE.UIButton.h
+// A class that represents a button in the UI
+#pragma once
+#ifndef VGE_UIBUTTON_H
+#define VGE_UIBUTTON_H
 
-#ifndef UIBUTTON_H
-#define UIBUTTON_H
+#include <string>
+#include <glm/glm.hpp>
 
-#include "UIElement.h"
+#include "VGE.OpenGLRenderer.h"
+#include "VGE.UIElement.h"
+#include "VGE.TextAlignment.h"
 
-class UIButton : public UIElement
+namespace VGE
 {
-public:
-    UIButton(const std::string& text);
+	class UIButton : public UIElement
+	{
+	public:
+		UIButton(std::string text, glm::vec2 position, glm::vec2 size, glm::vec4 color, glm::vec4 textColor, TextAlignment alignment);
+		~UIButton();
+		void Draw(OpenGLRenderer* renderer) override;
+		void SetText(std::string text);
+		std::string GetText() const;
+		void SetTextColor(glm::vec4 color);
+		glm::vec4 GetTextColor() const;
+		void SetAlignment(TextAlignment alignment);
+		TextAlignment GetAlignment() const;
+	private:
+		std::string m_text;
+		glm::vec4 m_textColor;
+		TextAlignment m_alignment;
+	};
+}
 
-	void Update(float deltaTime) override;
-    void Render(OpenGLRenderer& renderer) override;
-    bool HandleInput(const InputEvent& event) override;
-
-    // Properties
-    std::string Text;
-	glm::vec3 TextColor = glm::vec3(0.0f, 0.0f, 0.0f); // Black by default
-	glm::vec3 HoverColor = glm::vec3(0.5f, 0.5f, 0.5f); // Gray by default
-	glm::vec3 PressedColor = glm::vec3(0.3f, 0.3f, 0.3f); // Dark gray by default
-
-private:
-    // ... (Helper functions or member variables)
-
-	bool m_IsHovered = false;
-	bool m_IsPressed = false;
-};
-
-#endif // UIBUTTON_H
+#endif // VGE_UIBUTTON_H
