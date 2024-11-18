@@ -315,15 +315,6 @@
     <ClInclude Include="Components\Header Files\Component.h">
       <Filter>Components\Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Components\Header Files\IRenderable.h">
-      <Filter>Components\Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Components\Header Files\NodeComponent.h">
-      <Filter>Components\Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Components\Header Files\NodeScriptComponent.h">
-      <Filter>Components\Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Components\Header Files\PhysicsComponent.h">
       <Filter>Components\Header Files</Filter>
     </ClInclude>
@@ -331,9 +322,6 @@
       <Filter>Components\Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Components\Header Files\ScriptComponent.h">
-      <Filter>Components\Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Components\Header Files\SpecificComponent.h">
       <Filter>Components\Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Events\Header Files\Event.h">
@@ -558,36 +546,6 @@
     <ClInclude Include="UI\Header Files\VGE.UIWindow.h">
       <Filter>UI\Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Scene\Components\Header Files\NodeConnections.h">
-      <Filter>Scene\Components\Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Scene\Components\Header Files\NodeData.h">
-      <Filter>Scene\Components\Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Scene\Components\Header Files\NodeDataType.h">
-      <Filter>Scene\Components\Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Scene\Components\Header Files\NodeExecution.h">
-      <Filter>Scene\Components\Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Scene\Components\Header Files\NodeStates.h">
-      <Filter>Scene\Components\Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Scene\Components\Header Files\NodeVisuals.h">
-      <Filter>Scene\Components\Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Scene\Components\Header Files\NodeEvents.h">
-      <Filter>Scene\Components\Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Scene\Components\Header Files\NodeActions.h">
-      <Filter>Scene\Components\Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Scene\Components\Header Files\NodeProperties.h">
-      <Filter>Scene\Components\Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Scene\Components\Header Files\NodeChildren.h">
-      <Filter>Scene\Components\Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="AI\Header Files\Pathfinding.h">
       <Filter>AI\Header Files</Filter>
     </ClInclude>
@@ -660,21 +618,6 @@
     <ClInclude Include="Scripting\Scripting Engines\Header Files\WebAssemblyScriptingEngine.h">
       <Filter>Scripting\Scripting Engines\Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Scene\General\Header Files\EventNode.h">
-      <Filter>Scene\General\Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Scene\General\Header Files\ISelectable.h">
-      <Filter>Scene\General\Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Scene\General\Header Files\NodeComponent.h">
-      <Filter>Scene\General\Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Scene\General\Header Files\NodeSerialization.h">
-      <Filter>Scene\General\Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Scene\General\Header Files\VariableNode.h">
-      <Filter>Scene\General\Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Scene\Scene Graph\Header Files\SceneConnection.h">
       <Filter>Scene\Scene Graph\Header Files</Filter>
     </ClInclude>
@@ -705,12 +648,63 @@
     <ClInclude Include="Scripting\Graph\Header Files\GraphVisuals.h">
       <Filter>Scripting\Graph\Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Scene\Components\Header Files\SceneNodeActions.h">
+      <Filter>Scene\Components\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\Components\Header Files\SceneNodeChildren.h">
+      <Filter>Scene\Components\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\Components\Header Files\SceneNodeConnections.h">
+      <Filter>Scene\Components\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\Components\Header Files\SceneNodeData.h">
+      <Filter>Scene\Components\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\Components\Header Files\SceneNodeDataType.h">
+      <Filter>Scene\Components\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\Components\Header Files\SceneNodeEvents.h">
+      <Filter>Scene\Components\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\Components\Header Files\SceneNodeExecution.h">
+      <Filter>Scene\Components\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\Components\Header Files\SceneNodeProperties.h">
+      <Filter>Scene\Components\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\Components\Header Files\SceneNodeStates.h">
+      <Filter>Scene\Components\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\Components\Header Files\SceneNodeVisuals.h">
+      <Filter>Scene\Components\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\General\Header Files\Connection.h">
+      <Filter>Scene\General\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\General\Header Files\EventNode.h">
+      <Filter>Scene\General\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\General\Header Files\ISelectable.h">
+      <Filter>Scene\General\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\General\Header Files\Node.h">
+      <Filter>Scene\General\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\General\Header Files\Pin.h">
+      <Filter>Scene\General\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\General\Header Files\SceneNodeComponent.h">
+      <Filter>Scene\General\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\General\Header Files\SceneNodeSerialization.h">
+      <Filter>Scene\General\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\General\Header Files\VariableNode.h">
+      <Filter>Scene\General\Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Components\Source Files\Component.cpp">
-      <Filter>Components\Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Components\Source Files\NodeComponent.cpp">
       <Filter>Components\Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Components\Source Files\RenderComponent.cpp">
@@ -794,13 +788,19 @@
     <ClCompile Include="Scripting\Scripting Engines\Source Files\ScriptingEngine.cpp">
       <Filter>Scripting\Scripting Engines\Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="UI\Source Files\VGE.UIButton.cpp">
+      <Filter>UI\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\Source Files\VGE.UIElement.cpp">
+      <Filter>UI\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\Source Files\VGE.UICanvas.cpp">
+      <Filter>UI\Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="Scene\General\Source Files\Connection.cpp">
       <Filter>Scene\General\Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Scene\General\Source Files\Node.cpp">
-      <Filter>Scene\General\Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Scene\General\Source Files\NodeComponent.cpp">
       <Filter>Scene\General\Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Scene\General\Source Files\NodeConnections.cpp">
@@ -812,17 +812,11 @@
     <ClCompile Include="Scene\General\Source Files\NodeExecution.cpp">
       <Filter>Scene\General\Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Scene\General\Source Files\NodeSerialization.cpp">
+    <ClCompile Include="Scene\General\Source Files\SceneNodeComponent.cpp">
       <Filter>Scene\General\Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="UI\Source Files\VGE.UIButton.cpp">
-      <Filter>UI\Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="UI\Source Files\VGE.UIElement.cpp">
-      <Filter>UI\Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="UI\Source Files\VGE.UICanvas.cpp">
-      <Filter>UI\Source Files</Filter>
+    <ClCompile Include="Scene\General\Source Files\SceneNodeSerialization.cpp">
+      <Filter>Scene\General\Source Files</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

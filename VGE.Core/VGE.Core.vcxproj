@@ -70,6 +70,11 @@
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <SourcePath>C:\Users\info\source\repos\My Projects\Versa Game Engine;$(SourcePath)</SourcePath>
+    <ExternalIncludePath />
+    <ExecutablePath />
+  </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
@@ -104,7 +109,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>C:\Users\info\source\repos\My Projects\Versa Game Engine\VGE.Core\AI\Header Files;C:\Users\info\source\repos\My Projects\Versa Game Engine\VGE.Core\Animation\Header Files;C:\Users\info\source\repos\My Projects\Versa Game Engine\VGE.Core\Audio\Spatial\Header Files;C:\Users\info\source\repos\My Projects\Versa Game Engine\VGE.Core\Audio\Mixing\Header Files;C:\Users\info\source\repos\My Projects\Versa Game Engine\VGE.Core\Audio\General\Header Files;C:\Users\info\source\repos\My Projects\Versa Game Engine\VGE.Core\Components\Header Files;C:\Users\info\source\repos\My Projects\Versa Game Engine\VGE.Core\Core\Header Files;C:\Users\info\source\repos\My Projects\Versa Game Engine\VGE.Core\Data Structures\Header Files;C:\Users\info\source\repos\My Projects\Versa Game Engine\VGE.Core\Events\Header Files;C:\Users\info\source\repos\My Projects\Versa Game Engine\VGE.Core\Input\Header Files;C:\Users\info\source\repos\My Projects\Versa Game Engine\VGE.Core\Interfaces\UI\Header Files;C:\Users\info\source\repos\My Projects\Versa Game Engine\VGE.Core\Interfaces\Scene\Header Files;C:\Users\info\source\repos\My Projects\Versa Game Engine\VGE.Core\Interfaces\Rendering\Header Files;C:\Users\info\source\repos\My Projects\Versa Game Engine\VGE.Core\Interfaces\Physics\Header Files;C:\Users\info\source\repos\My Projects\Versa Game Engine\VGE.Core\Interfaces\Network\Header Files;C:\Users\info\source\repos\My Projects\Versa Game Engine\VGE.Core\Interfaces\General\Header Files;C:\Users\info\source\repos\My Projects\Versa Game Engine\VGE.Core\Interfaces\Audio\Header Files;C:\Users\info\source\repos\My Projects\Versa Game Engine\VGE.Core\Math\Header Files;C:\Users\info\source\repos\My Projects\Versa Game Engine\VGE.Core\Networking\Header Files;C:\Users\info\source\repos\My Projects\Versa Game Engine\VGE.Core\Physics\Header Files;C:\Users\info\source\repos\My Projects\Versa Game Engine\VGE.Core\Rendering\Shaders\Header Files;C:\Users\info\source\repos\My Projects\Versa Game Engine\VGE.Core\Rendering\Renderers\Header Files;C:\Users\info\source\repos\My Projects\Versa Game Engine\VGE.Core\Scene\Animation\Header Files;C:\Users\info\source\repos\My Projects\Versa Game Engine\VGE.Core\Scene\Components\Header Files;C:\Users\info\source\repos\My Projects\Versa Game Engine\VGE.Core\Scene\Events\Header Files;C:\Users\info\source\repos\My Projects\Versa Game Engine\VGE.Core\Scene\General\Header Files;C:\Users\info\source\repos\My Projects\Versa Game Engine\VGE.Core\Scene\Object Management\Header Files;C:\Users\info\source\repos\My Projects\Versa Game Engine\VGE.Core\Scene\Physics\Header Files;C:\Users\info\source\repos\My Projects\Versa Game Engine\VGE.Core\Scene\Rendering\Header Files;C:\Users\info\source\repos\My Projects\Versa Game Engine\VGE.Core\Scene\Scene Graph\Header Files;C:\Users\info\source\repos\My Projects\Versa Game Engine\VGE.Core\Scene\Serialization\Header Files;C:\Users\info\source\repos\My Projects\Versa Game Engine\VGE.Core\Scene\Spatial Partitioning\Header Files;C:\Users\info\source\repos\My Projects\Versa Game Engine\VGE.Core\Scripting\Scripting Engines\Header Files;C:\Users\info\source\repos\My Projects\Versa Game Engine\VGE.Core\Scripting\Graph\Header Files;C:\Users\info\source\repos\My Projects\Versa Game Engine\VGE.Core\Scripts\Header Files;C:\Users\info\source\repos\My Projects\Versa Game Engine\VGE.Core\Serialization\Header Files;C:\Users\info\source\repos\My Projects\Versa Game Engine\VGE.Core\Time\Header Files;C:\Users\info\source\repos\My Projects\Versa Game Engine\VGE.Core\UI\Header Files;C:\Users\info\source\repos\My Projects\Versa Game Engine\VGE.Core\Utils\Header Files;C:\Users\info\source\repos\My Projects\Versa Game Engine\VGE.Core\Voxel\Header Files;C:\Users\info\source\repos\My Projects\Versa Game Engine\VGE.Third Party;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\info\source\repos\My Projects\Versa Game Engine\VGE.Core\AI\Header Files;C:\Users\info\source\repos\My Projects\Versa Game Engine\VGE.Core\Animation\Header Files;C:\Users\info\source\repos\My Projects\Versa Game Engine\VGE.Core\Audio\Spatial\Header Files;C:\Users\info\source\repos\My Projects\Versa Game Engine\VGE.Core\Audio\Mixing\Header Files;C:\Users\info\source\repos\My Projects\Versa Game Engine\VGE.Core\Audio\General\Header Files;C:\Users\info\source\repos\My Projects\Versa Game Engine\VGE.Core\Components\Header Files;C:\Users\info\source\repos\My Projects\Versa Game Engine\VGE.Core\Core\Header Files;C:\Users\info\source\repos\My Projects\Versa Game Engine\VGE.Core\Data Structures\Header Files;C:\Users\info\source\repos\My Projects\Versa Game Engine\VGE.Core\Events\Header Files;C:\Users\info\source\repos\My Projects\Versa Game Engine\VGE.Core\Input\Header Files;C:\Users\info\source\repos\My Projects\Versa Game Engine\VGE.Core\Interfaces\UI\Header Files;C:\Users\info\source\repos\My Projects\Versa Game Engine\VGE.Core\Interfaces\Scene\Header Files;C:\Users\info\source\repos\My Projects\Versa Game Engine\VGE.Core\Interfaces\Rendering\Header Files;C:\Users\info\source\repos\My Projects\Versa Game Engine\VGE.Core\Interfaces\Physics\Header Files;C:\Users\info\source\repos\My Projects\Versa Game Engine\VGE.Core\Interfaces\Network\Header Files;C:\Users\info\source\repos\My Projects\Versa Game Engine\VGE.Core\Interfaces\General\Header Files;C:\Users\info\source\repos\My Projects\Versa Game Engine\VGE.Core\Interfaces\Audio\Header Files;C:\Users\info\source\repos\My Projects\Versa Game Engine\VGE.Core\Math\Header Files;C:\Users\info\source\repos\My Projects\Versa Game Engine\VGE.Core\Networking\Header Files;C:\Users\info\source\repos\My Projects\Versa Game Engine\VGE.Core\Physics\Header Files;C:\Users\info\source\repos\My Projects\Versa Game Engine\VGE.Core\Rendering\Shaders\Header Files;C:\Users\info\source\repos\My Projects\Versa Game Engine\VGE.Core\Rendering\Renderers\Header Files;C:\Users\info\source\repos\My Projects\Versa Game Engine\VGE.Core\Scene\Animation\Header Files;C:\Users\info\source\repos\My Projects\Versa Game Engine\VGE.Core\Scene\Components\Header Files;C:\Users\info\source\repos\My Projects\Versa Game Engine\VGE.Core\Scene\Events\Header Files;C:\Users\info\source\repos\My Projects\Versa Game Engine\VGE.Core\Scene\General\Header Files;C:\Users\info\source\repos\My Projects\Versa Game Engine\VGE.Core\Scene\Object Management\Header Files;C:\Users\info\source\repos\My Projects\Versa Game Engine\VGE.Core\Scene\Physics\Header Files;C:\Users\info\source\repos\My Projects\Versa Game Engine\VGE.Core\Scene\Rendering\Header Files;C:\Users\info\source\repos\My Projects\Versa Game Engine\VGE.Core\Scene\Scene Graph\Header Files;C:\Users\info\source\repos\My Projects\Versa Game Engine\VGE.Core\Scene\Serialization\Header Files;C:\Users\info\source\repos\My Projects\Versa Game Engine\VGE.Core\Scene\Spatial Partitioning\Header Files;C:\Users\info\source\repos\My Projects\Versa Game Engine\VGE.Core\Scripting\Scripting Engines\Header Files;C:\Users\info\source\repos\My Projects\Versa Game Engine\VGE.Core\Scripting\Graph\Header Files;C:\Users\info\source\repos\My Projects\Versa Game Engine\VGE.Core\Scripts\Header Files;C:\Users\info\source\repos\My Projects\Versa Game Engine\VGE.Core\Serialization\Header Files;C:\Users\info\source\repos\My Projects\Versa Game Engine\VGE.Core\Time\Header Files;C:\Users\info\source\repos\My Projects\Versa Game Engine\VGE.Core\UI\Header Files;C:\Users\info\source\repos\My Projects\Versa Game Engine\VGE.Core\Utils\Header Files;C:\Users\info\source\repos\My Projects\Versa Game Engine\VGE.Core\Voxel\Header Files;C:\Users\info\source\repos\My Projects\Versa Game Engine\VGE.Third Party</AdditionalIncludeDirectories>
       <LanguageStandard>stdcpp20</LanguageStandard>
     </ClCompile>
     <Link>
@@ -143,13 +148,9 @@
     <ClInclude Include="AI\Header Files\VGE.UISuggestionEngine.h" />
     <ClInclude Include="Components\Header Files\AudioComponent.h" />
     <ClInclude Include="Components\Header Files\Component.h" />
-    <ClInclude Include="Components\Header Files\IRenderable.h" />
-    <ClInclude Include="Components\Header Files\NodeComponent.h" />
-    <ClInclude Include="Components\Header Files\NodeScriptComponent.h" />
     <ClInclude Include="Components\Header Files\PhysicsComponent.h" />
     <ClInclude Include="Components\Header Files\RenderComponent.h" />
     <ClInclude Include="Components\Header Files\ScriptComponent.h" />
-    <ClInclude Include="Components\Header Files\SpecificComponent.h" />
     <ClInclude Include="Core\Header Files\VGE.Core.h" />
     <ClInclude Include="Events\Header Files\Event.h" />
     <ClInclude Include="Events\Header Files\InputEvent.h" />
@@ -172,20 +173,23 @@
     <ClInclude Include="Rendering\Renderers\Header Files\VGE.OpenGLRenderer.h" />
     <ClInclude Include="Rendering\Renderers\Header Files\VGE.VulkanRenderer.h" />
     <ClInclude Include="Rendering\Shaders\Header Files\VGE.ShaderManager.h" />
-    <ClInclude Include="Scene\Components\Header Files\NodeActions.h" />
-    <ClInclude Include="Scene\Components\Header Files\NodeChildren.h" />
-    <ClInclude Include="Scene\Components\Header Files\NodeConnections.h" />
-    <ClInclude Include="Scene\Components\Header Files\NodeData.h" />
-    <ClInclude Include="Scene\Components\Header Files\NodeDataType.h" />
-    <ClInclude Include="Scene\Components\Header Files\NodeEvents.h" />
-    <ClInclude Include="Scene\Components\Header Files\NodeExecution.h" />
-    <ClInclude Include="Scene\Components\Header Files\NodeProperties.h" />
-    <ClInclude Include="Scene\Components\Header Files\NodeStates.h" />
-    <ClInclude Include="Scene\Components\Header Files\NodeVisuals.h" />
+    <ClInclude Include="Scene\Components\Header Files\SceneNodeActions.h" />
+    <ClInclude Include="Scene\Components\Header Files\SceneNodeChildren.h" />
+    <ClInclude Include="Scene\Components\Header Files\SceneNodeConnections.h" />
+    <ClInclude Include="Scene\Components\Header Files\SceneNodeData.h" />
+    <ClInclude Include="Scene\Components\Header Files\SceneNodeDataType.h" />
+    <ClInclude Include="Scene\Components\Header Files\SceneNodeEvents.h" />
+    <ClInclude Include="Scene\Components\Header Files\SceneNodeExecution.h" />
+    <ClInclude Include="Scene\Components\Header Files\SceneNodeProperties.h" />
+    <ClInclude Include="Scene\Components\Header Files\SceneNodeStates.h" />
+    <ClInclude Include="Scene\Components\Header Files\SceneNodeVisuals.h" />
+    <ClInclude Include="Scene\General\Header Files\Connection.h" />
     <ClInclude Include="Scene\General\Header Files\EventNode.h" />
     <ClInclude Include="Scene\General\Header Files\ISelectable.h" />
-    <ClInclude Include="Scene\General\Header Files\NodeComponent.h" />
-    <ClInclude Include="Scene\General\Header Files\NodeSerialization.h" />
+    <ClInclude Include="Scene\General\Header Files\Node.h" />
+    <ClInclude Include="Scene\General\Header Files\Pin.h" />
+    <ClInclude Include="Scene\General\Header Files\SceneNodeComponent.h" />
+    <ClInclude Include="Scene\General\Header Files\SceneNodeSerialization.h" />
     <ClInclude Include="Scene\General\Header Files\VariableNode.h" />
     <ClInclude Include="Scene\Scene Graph\Header Files\SceneConnection.h" />
     <ClInclude Include="Scene\Scene Graph\Header Files\SceneEvent.h" />
@@ -275,7 +279,6 @@
     <ClCompile Include="AI\Source Files\PersonalityandEmotion.cpp" />
     <ClCompile Include="AI\Source Files\SensoryPerception.cpp" />
     <ClCompile Include="Components\Source Files\Component.cpp" />
-    <ClCompile Include="Components\Source Files\NodeComponent.cpp" />
     <ClCompile Include="Components\Source Files\RenderComponent.cpp" />
     <ClCompile Include="Components\Source Files\ScriptComponent.cpp" />
     <ClCompile Include="Components\Source Files\SpecificComponent.cpp" />
@@ -285,11 +288,11 @@
     <ClCompile Include="Rendering\Shaders\Source Files\VGE.ShaderManager.cpp" />
     <ClCompile Include="Scene\General\Source Files\Connection.cpp" />
     <ClCompile Include="Scene\General\Source Files\Node.cpp" />
-    <ClCompile Include="Scene\General\Source Files\NodeComponent.cpp" />
     <ClCompile Include="Scene\General\Source Files\NodeConnections.cpp" />
     <ClCompile Include="Scene\General\Source Files\NodeData.cpp" />
     <ClCompile Include="Scene\General\Source Files\NodeExecution.cpp" />
-    <ClCompile Include="Scene\General\Source Files\NodeSerialization.cpp" />
+    <ClCompile Include="Scene\General\Source Files\SceneNodeComponent.cpp" />
+    <ClCompile Include="Scene\General\Source Files\SceneNodeSerialization.cpp" />
     <ClCompile Include="Scripting\Graph\Source Files\Graph.cpp" />
     <ClCompile Include="Scripting\Graph\Source Files\GraphExecutor.cpp" />
     <ClCompile Include="Scripting\Graph\Source Files\GraphLayout.cpp" />
