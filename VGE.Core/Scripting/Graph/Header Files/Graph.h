@@ -7,8 +7,8 @@
 #include <stack>
 #include <algorithm>
 
-#include "Node.h"
-#include "Connection.h"
+#include "GraphNode.h"
+#include "GraphConnection.h"
 
 namespace VGE {
 	namespace Core {
@@ -26,6 +26,7 @@ namespace VGE {
 				std::vector<Connection*> GetConnections();
 				std::vector<Node*> FindNodesByTag(const std::string& tag);
 				std::vector<Node*> TopologicalSort();
+				void Reset();
 			private:
 				std::vector<Node*> Nodes;
 				std::vector<Connection*> Connections;

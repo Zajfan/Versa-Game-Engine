@@ -1,12 +1,16 @@
+// VGE.TextAlignment.h
 #pragma once
-#ifndef VGE_TEXT_ALIGNMENT_H
-#define VGE_TEXT_ALIGNMENT_H
+#ifndef VGE_TEXTALIGNMENT_H
+#define VGE_TEXTALIGNMENT_H
 
-enum class VGE_TextAlignment
+namespace VGE
 {
-	Left,
-	Center,
-	Right
-};
+    enum class TextAlignment
+    {
+        Left,
+        Center,
+        Right
+    };
+}
 
-#endif // VGE_TEXT_ALIGNMENT_H
+#endif // VGE_TEXTALIGNMENT_H

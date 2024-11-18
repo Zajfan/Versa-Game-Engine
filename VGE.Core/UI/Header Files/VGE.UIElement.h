@@ -1,4 +1,5 @@
 // VGE.UIElement.h (Base class for all UI elements)
+
 #pragma once
 #ifndef VGE_UIELEMENT_H
 #define VGE_UIELEMENT_H
@@ -45,20 +46,31 @@ public:
 	void SetColor(const glm::vec4& color);
 	void SetVisible(bool visible);
 	void SetEnabled(bool enabled);
-	void AddChild(std::shared_ptr<UIElement> child);
-	void RemoveChild(std::shared_ptr<UIElement> child);
-	void ClearChildren();
+	virtual void AddChild(std::shared_ptr<UIElement> child);
+	virtual void RemoveChild(std::shared_ptr<UIElement> child);
+	virtual void ClearChildren();
 
 protected:
 	// Children
 	std::vector<std::shared_ptr<UIElement>> m_children;
+	std::shared_ptr<UIElement> m_parent;
+	std::shared_ptr<UIElement> m_focusedChild;
+	std::shared_ptr<UIElement> m_hoveredChild;
+	std::shared_ptr<UIElement> m_clickedChild;
+	std::shared_ptr<UIElement> m_pressedChild;
+	std::shared_ptr<UIElement> m_selectedChild;
+	std::shared_ptr<UIElement> m_activeChild;
+	std::shared_ptr<UIElement> m_disabledChild;
+	std::shared_ptr<UIElement> m_visibleChild;
+	std::shared_ptr<UIElement> m_hiddenChild;
+	std::shared_ptr<UIElement> m_enteredChild;
+	std::shared_ptr<UIElement> m_leftChild;
 
 private:
 	// Member variables
 	glm::vec2 m_position;
 	glm::vec2 m_size;
 	glm::vec4 m_color;
-
 };
 
 #endif // VGE_UIELEMENT_H

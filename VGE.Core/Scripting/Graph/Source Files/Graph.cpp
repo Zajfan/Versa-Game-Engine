@@ -1,170 +1,95 @@
 #include "Graph.h"
-#include "GraphSerializer.h" 
-#include "GraphExecutor.h"  
-#include <algorithm>
-#include <stack>
+#include "GraphNode.h"
+#include "GraphConnection.h"
 
-// Methods for managing nodes
-void Graph::AddNode(Node* node)
-{
-    Nodes.push_back(node);
-    node->Initialize();
-}
+namespace VGE {
+	namespace Core {
+		namespace Scripting {
 
-void Graph::RemoveNode(Node* node)
-{
-    // Remove node from the list
-    Nodes.erase(std::remove(Nodes.begin(), Nodes.end(), node), Nodes.end());
+			Graph::Graph() {
+				// Constructor implementation
+				Nodes = std::vector<Node*>();
+				Connections = std::vector<Connection*>();
+			}
 
-    // Remove any connections associated with this node
-    Connections.erase(std::remove_if(Connections.begin(), Connections.end(),
-        [node](Connection* c) { return c->Source == node || c->Target == node; }), Connections.end());
+			Graph::~Graph() {
+				// Destructor implementation
+			}
 
-    // If the node has a parent, remove it from the parent's children list
-    if (node->Parent != nullptr)
-    {
-        node->Parent->Children.erase(std::remove(node->Parent->Children.begin(), node->Parent->Children.end(), node), node->Parent->Children.end());
-    }
+			void Graph::AddNode(Node* node) {
+				// AddNode implementation
+			}
 
-    // Recursively remove all child nodes
-    for (Node* child : node->Children)
-    {
-        RemoveNode(child);
-    }
+			void Graph::RemoveNode(Node* node) {
+				// RemoveNode implementation
+			}
 
-    node->Terminate();
-}
+			Node* Graph::FindNodeById(int id) {
+				// FindNodeById implementation
+				return nullptr;
+			}
 
-Node* Graph::FindNodeById(int id)
-{
-    auto it = std::find_if(Nodes.begin(), Nodes.end(), [id](Node* n) { return n->Id == id; });
-    if (it != Nodes.end())
-    {
-        return *it;
-    }
-    else
-    {
-        return nullptr;
-    }
-}
+			void Graph::CreateConnection(Node* source, Pin* sourcePin, Node* target, Pin* targetPin) {
+				// CreateConnection implementation
+			}
 
-// Methods for managing connections
-void Graph::CreateConnection(Node* source, Pin* sourcePin, Node* target, Pin* targetPin)
-{
-    if (source->CanConnectTo(target, sourcePin, targetPin))
-    {
-        Connection* connection = new Connection();
-        connection->Source = source;
-        connection->Target = target;
-        connection->SourcePin = sourcePin;
-        connection->TargetPin = targetPin;
-        Connections.push_back(connection);
-        source->AddConnection(connection);
-        target->AddConnection(connection);
-    }
-    else
-    {
-        // Handle invalid connection attempt
-    }
-}
+			void Graph::RemoveConnection(Connection* connection) {
+				// RemoveConnection implementation
+			}
 
-void Graph::DeleteConnection(Connection* connection)
-{
-    // Find and remove the connection from the vector
-    auto it = std::find(Connections.begin(), Connections.end(), connection);
-    if (it != Connections.end())
-    {
-        Connections.erase(it);
-    }
+			std::vector<Node*> Graph::GetNodes() {
+				// GetNodes implementation
+				return Nodes;
+			}
 
-    connection->Source->RemoveConnection(connection);
-    connection->Target->RemoveConnection(connection);
+			std::vector<Connection*> Graph::GetConnections() {
+				// GetConnections implementation
+				return Connections;
+			}
 
-    delete connection;
-}
+			std::vector<Node*> Graph::FindNodesByTag(const std::string& tag) {
+				// FindNodesByTag implementation
+				return {};
+			}
 
-// XML Serialization and Deserialization (delegated to GraphSerializer)
-void Graph::Serialize(const std::string& filePath)
-{
-    GraphSerializer::Serialize(*this, filePath);
-}
+			std::vector<Node*> Graph::TopologicalSort() {
+				std::stack<Node*> stack;
+				std::set<Node*> visited;
+				std::vector<Node*> sortedNodes;
 
-void Graph::Deserialize(const std::string& filePath)
-{
-    GraphSerializer::Deserialize(*this, filePath);
-}
+				for (Node* node : Nodes) {
+					if (visited.find(node) == visited.end()) {
+						TopologicalSortUtil(node, visited, stack);
+					}
+				}
 
-// Graph Execution (delegated to GraphExecutor)
-void Graph::Execute()
-{
-    GraphExecutor::Execute(*this);
-}
+				while (!stack.empty()) {
+					sortedNodes.push_back(stack.top());
+					stack.pop();
+				}
 
-// Other graph-level operations
-// TODO: Implement these methods based on your needs
-std::vector<Node*> Graph::FindNodesByType(NodeType type)
-{
-    std::vector<Node*> result;
-    for (auto& node : Nodes)
-    {
-        if (node->Type == type)
-        {
-            result.push_back(node);
-        }
-    }
-    return result;
-}
+				return sortedNodes;
+			}
 
-std::vector<Node*> Graph::FindNodesByTag(const std::string& tag)
-{
-    std::vector<Node*> result;
-    for (auto& node : Nodes)
-    {
-        if (std::find(node->Tags.begin(), node->Tags.end(), tag) != node->Tags.end())
-        {
-            result.push_back(node);
-        }
-    }
-    return result;
-}
+			void Graph::TopologicalSortUtil(Node* node, std::set<Node*>& visited, std::stack<Node*>& stack) {
+				visited.insert(node);
 
-// ... (Other potential graph-level operations)
+				for (Connection* connection : Connections) {
+					if (connection->Source == node) {
+						Node* targetNode = connection->Target;
+						if (visited.find(targetNode) == visited.end()) {
+							TopologicalSortUtil(targetNode, visited, stack);
+						}
+					}
+				}
 
-// Topological Sort Implementation (if not in GraphExecutor)
-std::vector<Node*> Graph::TopologicalSort()
-{
-    std::vector<Node*> sortedNodes;
-    std::set<Node*> visited;
-    std::stack<Node*> stack;
+				stack.push(node);
+			}
 
-    for (Node* node : Nodes)
-    {
-        if (visited.count(node) == 0)
-        {
-            TopologicalSortUtil(node, visited, stack);
-        }
-    }
+			void Graph::Reset() {
+				// Reset implementation
+			}
 
-    while (!stack.empty())
-    {
-        sortedNodes.push_back(stack.top());
-        stack.pop();
-    }
-
-    return sortedNodes;
-}
-
-void Graph::TopologicalSortUtil(Node* node, std::set<Node*>& visited, std::stack<Node*>& stack)
-{
-    visited.insert(node);
-
-    for (Node* connectedNode : node->GetConnectedNodes())
-    {
-        if (visited.count(connectedNode) == 0)
-        {
-            TopologicalSortUtil(connectedNode, visited, stack);
-        }
-    }
-
-    stack.push(node);
-}
+		} // namespace Scripting
+	} // namespace Core
+} // namespace VGE

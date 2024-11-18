@@ -1,9 +1,9 @@
 #pragma once
-#ifndef CONNECTION_H
-#define CONNECTION_H
+#ifndef VGE_CORE_SCRIPTING_GRAPHCONNECTION_H
+#define VGE_CORE_SCRIPTING_GRAPHCONNECTION_H
 
-#include "Node.h"
-#include "Pin.h"
+#include "GraphNode.h"
+#include "GraphPin.h"
 
 class Node;
 class Pin;
@@ -24,4 +24,4 @@ private:
     bool IsCircularConnection() const;
 };
 
-#endif // CONNECTION_H
+#endif // VGE_CORE_SCRIPTING_GRAPHCONNECTION_H

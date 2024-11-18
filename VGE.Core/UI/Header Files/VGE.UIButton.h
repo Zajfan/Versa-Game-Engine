@@ -1,5 +1,3 @@
-// Last update: 21:00 20-10-2019
-// VGE.UIButton.h
 // A class that represents a button in the UI
 #pragma once
 #ifndef VGE_UIBUTTON_H
@@ -14,12 +12,14 @@
 
 namespace VGE
 {
+	// A class that represents a button in the UI
 	class UIButton : public UIElement
 	{
 	public:
 		UIButton(std::string text, glm::vec2 position, glm::vec2 size, glm::vec4 color, glm::vec4 textColor, TextAlignment alignment);
 		~UIButton();
-		void Draw(OpenGLRenderer* renderer) override;
+		void Render(OpenGLRenderer& renderer) override;
+		void Draw(OpenGLRenderer* renderer);
 		void SetText(std::string text);
 		std::string GetText() const;
 		void SetTextColor(glm::vec4 color);
