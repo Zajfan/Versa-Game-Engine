@@ -1,67 +1,34 @@
 #include "RenderComponent.h"
 #include "Node.h"
-#include <GL/gl.h>
-#include <GL/glu.h>
-#include <freeglut.h>
+#include <memory>
+#include <string>
 
-void RenderComponent::Render()
+namespace VGE
 {
-    // Assuming you have a Node* m_owner; in your NodeComponent class
-    // and properties like Color, Shape, etc. in your Node class
+	RenderComponent::RenderComponent()
+	{
+	}
 
-    // Set color
-    glColor3f(m_owner->Color.x, m_owner->Color.y, m_owner->Color.z);
-
-    // Set line width
-    glLineWidth(m_owner->BorderThickness);
-
-    switch (m_owner->Shape)
+    void RenderComponent::Update(float deltaTime)
     {
-    case Node::NodeShape::Rectangle:
-        // Draw rectangle
-        glBegin(GL_QUADS);
-        glVertex2f(m_owner->Position.x, m_owner->Position.y);
-        glVertex2f(m_owner->Position.x + m_owner->Size.x, m_owner->Position.y);
-        glVertex2f(m_owner->Position.x + m_owner->Size.x, m_owner->Position.y + m_owner->Size.y);
-        glVertex2f(m_owner->Position.x, m_owner->Position.y + m_owner->Size.y);
-        glEnd();
-        break;
-    case Node::NodeShape::Circle:
-        // Draw circle
-        glBegin(GL_TRIANGLE_FAN);
-        glVertex2f(m_owner->Position.x + m_owner->Size.x / 2, m_owner->Position.y + m_owner->Size.y / 2);
-        for (int i = 0; i <= 360; i++)
+        // Example implementation: Update the component's state
+        // For instance, you might want to update the position or other properties
+        // based on deltaTime. This is a placeholder example.
+        if (m_Node)
         {
-            float angle = i * 3.14159f / 180.0f;
-            glVertex2f(m_owner->Position.x + m_owner->Size.x / 2 + cos(angle) * m_owner->Size.x / 2,
-                m_owner->Position.y + m_owner->Size.y / 2 + sin(angle) * m_owner->Size.y / 2);
+            // Update the node's state or properties
+            // Example: m_Node->UpdateTransform(deltaTime);
         }
-        glEnd();
-        break;
-        // ... add cases for other shapes
-    default:
-        // Draw default rectangle
-        glBegin(GL_QUADS);
-        glVertex2f(m_owner->Position.x, m_owner->Position.y);
-        glVertex2f(m_owner->Position.x + m_owner->Size.x, m_owner->Position.y);
-        glVertex2f(m_owner->Position.x + m_owner->Size.x, m_owner->Position.y + m_owner->Size.y);
-        glVertex2f(m_owner->Position.x, m_owner->Position.y + m_owner->Size.y);
-        glEnd();
-        break;
     }
 
-    // Draw node name
-    // Note: OpenGL does not have built-in text rendering, you need to use a library like FreeType or GLUT for text rendering
-    // Here is an example using FreeGLUT
-    glRasterPos2f(m_owner->Position.x + 10, m_owner->Position.y + 10);
-    for (char c : m_owner->Name)
+    void RenderComponent::Render()
     {
-        glutBitmapCharacter(GLUT_BITMAP_HELVETICA_18, c);
-    }
-
-    // Draw icon if available
-    if (!m_owner->Icon.empty())
-    {
-        // TODO: Implement icon loading and drawing
+        // Example implementation: Render the component
+        // This could involve setting up rendering states, shaders, etc.
+        if (m_Node)
+        {
+            // Render the node or its associated graphics
+            // Example: m_Node->Render();
+        }
     }
 }

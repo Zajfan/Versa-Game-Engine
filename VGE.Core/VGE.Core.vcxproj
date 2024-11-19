@@ -72,8 +72,8 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <SourcePath>C:\Users\info\source\repos\My Projects\Versa Game Engine;$(SourcePath)</SourcePath>
-    <ExternalIncludePath />
-    <ExecutablePath />
+    <ExternalIncludePath>$(ExternalIncludePath)</ExternalIncludePath>
+    <ExecutablePath>$(ExecutablePath)</ExecutablePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>

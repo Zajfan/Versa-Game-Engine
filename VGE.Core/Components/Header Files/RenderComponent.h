@@ -1,22 +1,18 @@
 #ifndef RenderComponent_H
 #define RenderComponent_H
 
-#include "NodeComponent.h"
-#include "IRenderable.h"
+#include "Component.h"
 
-class RenderComponent : public NodeComponent, public IRenderable
+namespace VGE
 {
-public:
-    RenderComponent(Node* owner);
-
-    // Properties specific to rendering (e.g., color, shape, texture)
-    // ...
-
-    // IRenderable implementation
-    virtual void Render(/* ... graphics context */) override;
-
-    // Other methods related to rendering
-    // ...
-};
+	class RenderComponent : public Component
+	{
+	public:
+		RenderComponent();
+		~RenderComponent();
+		void Update(float deltaTime) override;
+		void Render() override;
+	};
+}
 
 #endif // RenderComponent_H
