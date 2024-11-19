@@ -9,7 +9,9 @@
 #include <memory> 
 
 #include "Connection.h" 
-#include "NodeComponent.h" 
+#include "SceneNodeComponent.h"
+#include "ISelectable.h"
+#include "Pin.h"
 
 // Define an enum for supported data types
 enum class NodeDataType

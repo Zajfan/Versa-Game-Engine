@@ -1,0 +1,1 @@
+For implementing accessibility features to make the UI usable for people with disabilities.

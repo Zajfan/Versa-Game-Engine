@@ -5,13 +5,14 @@
 
 namespace VGE
 {
-	class RenderComponent : public Component
+	class RenderComponent : public vge::Component
 	{
 	public:
 		RenderComponent();
 		~RenderComponent();
 		void Update(float deltaTime) override;
 		void Render() override;
+		void Render(const glm::mat4& parentTransform) override;
 	};
 }
 

@@ -15,7 +15,7 @@ namespace vge
 		Component();
 		Component(const std::string& name);
 		virtual ~Component();
-		virtual void Update(float deltaTime);
+		virtual void Update(float deltaTime) = 0;
 		virtual void Render();
 		virtual void Render(const glm::mat4& parentTransform);
 		std::string GetName();
@@ -29,3 +29,4 @@ namespace vge
 }
 
 #endif // COMPONENT_H
+
