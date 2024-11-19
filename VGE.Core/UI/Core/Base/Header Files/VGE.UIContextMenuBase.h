@@ -1,17 +1,16 @@
 #pragma once
-#ifndef VGE_UI_CONTEXT_MENU_H
-#define VGE_UI_CONTEXT_MENU_H
+#ifndef VGE_UI_CONTEXT_MENU_BASE_H
+#define VGE_UI_CONTEXT_MENU_BASE_H
 
 #include "VGE.UIBase.h"
-#include "VGE.UIContextMenuBase.h"
 
 namespace VGE
 {
-	class UIContextMenu : public UIContextMenuBase
+	class UIContextMenuBase : public UIBase
 	{
 	public:
-		UIContextMenu();
-		virtual ~UIContextMenu();
+		UIContextMenuBase();
+		virtual ~UIContextMenuBase();
 		virtual void Initialize();
 		virtual void Update();
 		virtual void Render();
@@ -57,13 +56,8 @@ namespace VGE
 		virtual void OnItemDataChanged(const std::function<void()>& callback);
 		virtual void OnItemDataIntChanged(const std::function<void()>& callback);
 		virtual void OnItemConditionChanged(const std::function<void()>& callback);
-
-	private:
-		std::vector<UIContextMenuItem> m_items;
-		Vector2 m_position;
-		Vector2 m_size;
-		bool m_visible;
 	};
+
 }
 
-#endif // VGE_UI_CONTEXT_MENU_H
+#endif // VGE_UI_CONTEXT_MENU_BASE_H
