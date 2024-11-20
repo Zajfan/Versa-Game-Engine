@@ -1,0 +1,1 @@
+Separate directory for handling plugins, allowing for extendable engine functionality.

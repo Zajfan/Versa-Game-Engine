@@ -1,0 +1,1 @@
+Purpose: Implement a flexible ECS framework to manage entities and their components, enabling efficient updates and rendering.

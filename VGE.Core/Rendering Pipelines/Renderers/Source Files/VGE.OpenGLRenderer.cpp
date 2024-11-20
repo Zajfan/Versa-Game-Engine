@@ -61,4 +61,20 @@ void OpenGLRenderer::Render()
     }
 }
 
+void OpenGLRenderer::DrawText(const std::string& text, const glm::vec2& position, const std::string& fontName, unsigned int fontSize, const glm::vec3& color) {
+    // Implement text rendering using OpenGL
+}
+
+void OpenGLRenderer::DrawButton(const glm::vec2& position, const glm::vec2& size, const std::string& label, const glm::vec3& color) {
+    // Implement button rendering using OpenGL
+}
+
+void OpenGLRenderer::DrawCheckbox(const glm::vec2& position, bool isChecked, const std::string& label, const glm::vec3& color) {
+    // Implement checkbox rendering using OpenGL
+}
+
+void OpenGLRenderer::DrawSlider(const glm::vec2& position, float minValue, float maxValue, float currentValue, const glm::vec3& color) {
+    // Implement slider rendering using OpenGL
+}
+
 // ... (Implementations for other methods: ClearScreen, DrawRectangle, etc.)

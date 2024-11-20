@@ -1,1 +1,1 @@
-(UI-specific input handling - UIInputManager.h, etc.)
+(Interactive elements like buttons, sliders)

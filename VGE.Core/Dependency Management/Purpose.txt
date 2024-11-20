@@ -1,0 +1,1 @@
+Purpose: Implement a system to manage dependencies between modules, ensuring clear build and runtime dependencies.

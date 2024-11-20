@@ -25,6 +25,9 @@ public:
 	void DrawSprite(const std::string& texturePath, const glm::vec2& position, const glm::vec2& size) override;
 	void SetViewportSize(int width, int height) override;
 	void SetFont(const std::string& fontPath) override;
+    void DrawButton(const glm::vec2& position, const glm::vec2& size, const std::string& label, const glm::vec3& color);
+    void DrawCheckbox(const glm::vec2& position, bool isChecked, const std::string& label, const glm::vec3& color);
+    void DrawSlider(const glm::vec2& position, float minValue, float maxValue, float currentValue, const glm::vec3& color);
 	// ... (Add other rendering methods as needed)
     // ... (Add other drawing methods for sprites, text, etc.)
 
